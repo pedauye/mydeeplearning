@@ -6,10 +6,19 @@
     <description>Recent content on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mi primer post</title>
+      <link>/2017/11/mi-primer-post/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/mi-primer-post/</guid>
+      <description>Primero de todo quiero darte las gracias por visitar mi blog. Quiero que sepas es que este blog, en parte, es más para mi que para ti puesto que su misión principal es que aprenda nuevas habilidades y que pueda recordar aquellas que tengo oxidadas. Por tanto los artículos de este blog van a ser procedimentales y personales, escritos para mí. Sin embargo, la razón por la que subo este contenido a interne (además de para aprender a cómo hacerlo), es para que sirva a aquellos que lo lean a ahorrar tiempo en aprender sobre las cosas de las que hablo, o simplemente a ver la forma de hacerlo que a mi me ha funcionado.</description>
+    </item>
     
     <item>
       <title>Hello R Markdown</title>
