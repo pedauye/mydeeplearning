@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Modificando el config.toml</title>
+      <link>/2017/11/modificando-el-config-toml/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/11/modificando-el-config-toml/</guid>
+      <description>¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&amp;gt; Global Options -&amp;gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.</description>
+    </item>
     
     <item>
       <title>Mi primer post</title>

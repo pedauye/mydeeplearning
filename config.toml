@@ -14,7 +14,7 @@
 
 baseURL = "https://mydeeplearning.netlify.com/"
 languageCode = "en-us"
-defaultContentLanguage = "spanish"
+defaultContentLanguage = "es"
 title = "My Deep Learning"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
@@ -49,30 +49,30 @@ canonifyurls = true
 [[menu.main]]
   weight = 1
   identifier = "home"
-  name = "Home"
+  name = "Inicio"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
 [[menu.main]]
   weight = 2
-  identifier = "categories"
-  name = "Categories"
+  identifier = "Categories"
+  name = "Categorías"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
   url = "/categories"
 [[menu.main]]
   weight = 3
-  identifier = "tags"
+  identifier = "Tags"
   name = "Tags"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
   url = "/tags"
 [[menu.main]]
   weight = 4
-  identifier = "archives"
+  identifier = "Archivo"
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/archives"
 [[menu.main]]
   weight = 5
-  identifier = "about"
+  identifier = "Sobre mí"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
   url = "/#about"

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Google Analytics on My Deep Learning</title>
-    <link>/tags/google-analytics/</link>
-    <description>Recent content in Google Analytics on My Deep Learning</description>
+    <title>Configuración on My Deep Learning</title>
+    <link>/tags/configuraci%C3%B3n/</link>
+    <description>Recent content in Configuración on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/google-analytics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/configuraci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>/2017/11/modificando-el-config-toml/</guid>
       <description>¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&amp;gt; Global Options -&amp;gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Tranquilpeak 0.4.3-BETA</title>
-      <link>/2015/06/welcome-to-tranquilpeak-0.4.3-beta/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/2015/06/welcome-to-tranquilpeak-0.4.3-beta/</guid>
-      <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-&lt;/p&gt;</description>
     </item>
     
   </channel>
