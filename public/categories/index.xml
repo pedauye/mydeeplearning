@@ -6,6 +6,8 @@
     <description>Recent content in Categories on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
+    <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +16,7 @@
       <title>Diversos</title>
       <link>/categories/diversos/</link>
       <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/categories/diversos/</guid>
       <description></description>
     </item>
@@ -23,7 +25,7 @@
       <title>Features</title>
       <link>/categories/features/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/categories/features/</guid>
       <description></description>
     </item>
@@ -32,7 +34,7 @@
       <title>R</title>
       <link>/categories/r/</link>
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/categories/r/</guid>
       <description></description>
     </item>
@@ -41,7 +43,7 @@
       <title>Releases</title>
       <link>/categories/releases/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/categories/releases/</guid>
       <description></description>
     </item>
@@ -50,7 +52,7 @@
       <title>Tranquilpeak</title>
       <link>/categories/tranquilpeak/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/categories/tranquilpeak/</guid>
       <description></description>
     </item>

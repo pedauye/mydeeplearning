@@ -6,6 +6,8 @@
     <description>Recent content in Tags on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
+    <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
     <lastBuildDate>Sat, 16 Aug 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +17,7 @@
       <title>Hidden tag section showcase</title>
       <link>/2014/08/hidden-tag-section-showcase/</link>
       <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/2014/08/hidden-tag-section-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the tag section is hidden.
 &lt;/p&gt;</description>

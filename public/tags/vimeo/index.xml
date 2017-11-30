@@ -6,6 +6,8 @@
     <description>Recent content in Vimeo on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
+    <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
     <lastBuildDate>Sat, 09 Aug 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/vimeo/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +17,7 @@
       <title>Video integrations showcase</title>
       <link>/2014/08/video-integrations-showcase/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/2014/08/video-integrations-showcase/</guid>
       <description>&lt;p&gt;Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
 &lt;/p&gt;</description>

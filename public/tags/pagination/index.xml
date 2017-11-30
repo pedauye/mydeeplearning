@@ -6,6 +6,8 @@
     <description>Recent content in Pagination on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
+    <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
     <lastBuildDate>Fri, 15 Aug 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/pagination/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +17,7 @@
       <title>Hidden pagination showcase</title>
       <link>/2014/08/hidden-pagination-showcase/</link>
       <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
-      
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/2014/08/hidden-pagination-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the pagination is hidden.
 &lt;/p&gt;</description>
