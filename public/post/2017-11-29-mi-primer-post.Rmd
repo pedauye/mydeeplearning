@@ -3,6 +3,7 @@ title: Mi primer post
 author: Alberto PedauyÃ© Paredes
 date: '2017-11-29'
 slug: mi-primer-post
+description: "Primer post, donde hablo de como va a funcionar el blog y de sobre los temas que se van a tratar"
 categories:
   - R
   - Diversos
