@@ -16,7 +16,7 @@ tags:
 # Modificaciones que se pueden hacer
 
 # Adaptándolo a mi página
-
+## Idioma
 El primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en `Tools -> Global Options -> Spelling` y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo `config.toml` y en la línea de comando `defaultContentLanguage` cambiamos el idioma a castellano.
 
 ```{r Cambio de idioma, eval=FALSE}
@@ -24,15 +24,24 @@ defaultContentLanguaje = "es-es"
 ```
 
 Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca `es` cuando realmente el archivo .yaml esta guardado como `es-es.yaml`. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web.
-
+## Identificadores de página
 El siguiente cambio es modificar los indentificadores del menu de tal forma que en la línea de código de cada menu sobrescribimos nuestro identificador de sección. Un ejemplo de esto es:
 
 ```{r Cambio de identificadores, eval=FALSE}
 [[menu.main]]
   weight = 1
-  identifier = "Inicio" #Siendo en esta línea donde se produce el cambio
+  identifier = "Inicio"
   name = "Home"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
 ```
 
+## Añadir opción de compartir en Linkedin
+Para poder introducir una opción de compartir en Linkedin hay que añadir un parametro nuevo en la sección de `[[param.sharingOptions]]` de la siguiente forma:
+```{r parametro de linkedin, eval=FALSE}
+  [[params.sharingOptions]]
+    name = "Linkedin"
+    icon = "fa-linkedin"
+    url = "https://www.linkedin.com/shareArticle?mini=true&url=%s"
+```
+De este trozo de código la parte más importante es la url. En la página para desarrolladores de Linkedin (<https://developer.linkedin.com/docs/share-on-linkedin>) te proporcionan las urls. En nuestro caso tenemos que ir a la pestaña de **Customized URL** y coger el link que ahí se aporta. A este link le añadiremos `Article?mini=true&url=%s`.

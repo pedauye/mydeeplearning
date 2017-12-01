@@ -211,7 +211,7 @@ canonifyurls = true
   [[params.sharingOptions]]
     name = "Linkedin"
     icon = "fa-linkedin"
-    url = "https://www.linkedin.com/shareArticle"
+    url = "https://www.linkedin.com/shareArticle?mini=true&url=%s"
 
   [params.header.rightLink]
     class = ""

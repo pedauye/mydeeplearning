@@ -28,15 +28,15 @@
     
 
     
-    <meta name="description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
-    <meta property="og:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
+    <meta name="description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
+    <meta property="og:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Modificando el config.toml">
     <meta property="og:url" content="/2017/11/modificando-el-config-toml/">
     <meta property="og:site_name" content="My Deep Learning">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="My Deep Learning">
-    <meta name="twitter:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
+    <meta name="twitter:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
     
     
 
@@ -236,16 +236,27 @@ ga('send', 'pageview');
 </div>
 <div id="adaptandolo-a-mi-pagina" class="section level1">
 <h1>Adaptándolo a mi página</h1>
+<div id="idioma" class="section level2">
+<h2>Idioma</h2>
 <p>El primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en <code>Tools -&gt; Global Options -&gt; Spelling</code> y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo <code>config.toml</code> y en la línea de comando <code>defaultContentLanguage</code> cambiamos el idioma a castellano.</p>
 <pre class="r"><code>defaultContentLanguaje = &quot;es-es&quot;</code></pre>
-<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web.</p>
-<p>El siguiente cambio es modificar los indentificadores del menu de tal forma que en la línea de código de cada menu sobrescribimos nuestro identificador de sección. Un ejemplo de esto es:</p>
+<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web. ## Identificadores de página El siguiente cambio es modificar los indentificadores del menu de tal forma que en la línea de código de cada menu sobrescribimos nuestro identificador de sección. Un ejemplo de esto es:</p>
 <pre class="r"><code>[[menu.main]]
   weight = 1
-  identifier = &quot;Inicio&quot; #Siendo en esta línea donde se produce el cambio
+  identifier = &quot;Inicio&quot;
   name = &quot;Home&quot;
   pre = &quot;&lt;i class=\&quot;sidebar-button-icon fa fa-lg fa-home\&quot;&gt;&lt;/i&gt;&quot;
   url = &quot;/&quot;</code></pre>
+</div>
+<div id="anadir-opcion-de-compartir-en-linkedin" class="section level2">
+<h2>Añadir opción de compartir en Linkedin</h2>
+<p>Para poder introducir una opción de compartir en Linkedin hay que añadir un parametro nuevo en la sección de <code>[[param.sharingOptions]]</code> de la siguiente forma:</p>
+<pre class="r"><code>  [[params.sharingOptions]]
+    name = &quot;Linkedin&quot;
+    icon = &quot;fa-linkedin&quot;
+    url = &quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=%s&quot;</code></pre>
+<p>De este trozo de código la parte más importante es la url. En la página para desarrolladores de Linkedin (<a href="https://developer.linkedin.com/docs/share-on-linkedin" class="uri">https://developer.linkedin.com/docs/share-on-linkedin</a>) te proporcionan las urls. En nuestro caso tenemos que ir a la pestaña de <strong>Customized URL</strong> y coger el link que ahí se aporta. A este link le añadiremos <code>Article?mini=true&amp;url=%s</code>.</p>
+</div>
 </div>
 
               
@@ -318,7 +329,7 @@ ga('send', 'pageview');
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle%25!%28EXTRA%20string=/2017/11/modificando-el-config-toml/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/2017/11/modificando-el-config-toml/">
               <i class="fa fa-linkedin"></i>
             </a>
           </li>
@@ -410,7 +421,7 @@ ga('send', 'pageview');
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle%25!%28EXTRA%20string=/2017/11/modificando-el-config-toml/%29">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/2017/11/modificando-el-config-toml/">
               <i class="fa fa-linkedin"></i>
             </a>
           </li>
@@ -458,7 +469,7 @@ ga('send', 'pageview');
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.linkedin.com/shareArticle%25!%28EXTRA%20string=%2F2017%2F11%2Fmodificando-el-config-toml%2F%29">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2F2017%2F11%2Fmodificando-el-config-toml%2F">
           <i class="fa fa-linkedin"></i><span>Compartir en Linkedin</span>
         </a>
       </li>
@@ -527,7 +538,7 @@ ga('send', 'pageview');
                   Nov 11, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.</div>
+              <div class="media-content hide-xs font-merryweather">¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -553,141 +564,15 @@ ga('send', 'pageview');
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2015/07/hello-r-markdown/">
-                <h3 class="media-heading">Hello R Markdown</h3>
+              <a class="link-unstyled" href="/2013/10/chinese-test/">
+                <h3 class="media-heading">中文測試</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
-                  Jul 7, 2015
+                  Oct 10, 2013
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2015/06/welcome-to-tranquilpeak-0.4.3-beta/">
-                <h3 class="media-heading">Welcome to Tranquilpeak 0.4.3-BETA</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Jun 6, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2015/05/elements-showcase/">
-                <h3 class="media-heading">Elements showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  May 5, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&rsquo;s simple and elegant.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2015/05/cover-image-showcase/">
-                <h3 class="media-heading">Cover image showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  May 5, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak integrate a unique &ldquo;cover image&rdquo; feature. Open this post to see how this feature sublimate your article.</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2015/03/highlighted-code-showcase/">
-                <h3 class="media-heading">highlighted code showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Mar 3, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak Hugo theme have its own theme to highlight source code. It&rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/10/tags-plugins-showcase/">
-                <h3 class="media-heading">Tags plugins showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Oct 10, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how tag plugins are displayed. See <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags">docs</a> for more info.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/08/hidden-social-section-showcase/">
-                <h3 class="media-heading">Hidden social section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the social section is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/08/hidden-tag-section-showcase/">
-                <h3 class="media-heading">Hidden tag section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the tag section is hidden.
+              <div class="media-content hide-xs font-merryweather"><p>This is a chinese test post to show you how chinese is displayed.
 </p></div>
             </div>
             <div style="clear:both;"></div>
@@ -701,7 +586,7 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
          data-message-zero="no se encontraron artículos"
          data-message-one="1 artículo encontrado"
          data-message-other="{n} artículos encontrados">
-         15 posts found
+         3 posts found
       </p>
     </div>
   </div>
