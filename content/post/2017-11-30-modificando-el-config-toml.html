@@ -22,7 +22,8 @@ tags:
 <div id="adaptandolo-a-mi-pagina" class="section level1">
 <h1>Adaptándolo a mi página</h1>
 <p>El primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en <code>Tools -&gt; Global Options -&gt; Spelling</code> y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo <code>config.toml</code> y en la línea de comando <code>defaultContentLanguage</code> cambiamos el idioma a castellano.</p>
-<pre class="r"><code>defaultContentLanguaje = &quot;es&quot;</code></pre>
+<pre class="r"><code>defaultContentLanguaje = &quot;es-es&quot;</code></pre>
+<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web.</p>
 <p>El siguiente cambio es modificar los indentificadores del menu de tal forma que en la línea de código de cada menu sobrescribimos nuestro identificador de sección. Un ejemplo de esto es:</p>
 <pre class="r"><code>[[menu.main]]
   weight = 1

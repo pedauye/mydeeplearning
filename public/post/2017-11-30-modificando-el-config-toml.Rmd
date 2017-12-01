@@ -20,8 +20,10 @@ tags:
 El primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en `Tools -> Global Options -> Spelling` y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo `config.toml` y en la línea de comando `defaultContentLanguage` cambiamos el idioma a castellano.
 
 ```{r Cambio de idioma, eval=FALSE}
-defaultContentLanguaje = "es"
+defaultContentLanguaje = "es-es"
 ```
+
+Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca `es` cuando realmente el archivo .yaml esta guardado como `es-es.yaml`. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web.
 
 El siguiente cambio es modificar los indentificadores del menu de tal forma que en la línea de código de cada menu sobrescribimos nuestro identificador de sección. Un ejemplo de esto es:
 
