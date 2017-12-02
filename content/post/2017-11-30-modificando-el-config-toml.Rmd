@@ -9,9 +9,15 @@ categories:
 tags:
   - Configuración
   - google analytics
+keywords:
+  - config.toml
+  - modificar
+  - mis gustos
+comments: true
 ---
-
-# ¿Qué es el config.toml?
+<!--more-->
+<!-- toc -->
+#¿Qué es el config.toml?
 
 # Modificaciones que se pueden hacer
 
@@ -44,7 +50,7 @@ Para poder introducir una opción de compartir en Linkedin hay que añadir un pa
     icon = "fa-linkedin"
     url = "https://www.linkedin.com/shareArticle?mini=true&url=%s"
 ```
-De este trozo de código la parte más importante es la url. En la página para desarrolladores de Linkedin (<https://developer.linkedin.com/docs/share-on-linkedin>) te proporcionan las urls. En nuestro caso tenemos que ir a la pestaña de **Customized URL** y coger el link que ahí se aporta. A este link le añadiremos `Article?mini=true&url=%s`.
+De este trozo de código la parte más importante es la url. En la página para desarrolladores de [Linkedin](https://developer.linkedin.com/docs/share-on-linkedin) te proporcionan las urls, la cual hay que modificar para adaptarla a la página. En nuestro caso tenemos que ir a la pestaña de **Customized URL** y coger el link que ahí se aporta. A este link le añadiremos `Article?mini=true&url=%s`.
 
 ## Siguiente paso
 

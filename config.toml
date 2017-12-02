@@ -39,7 +39,7 @@ canonifyurls = true
   #gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "/img/tamañocarnet.png"
+  picture = "https://res.cloudinary.com/peda/image/upload/c_scale,w_949/v1512211848/tama%C3%B1ocarnet_dbsm90.png"
   email = "alpedauye@hotmail.com"
   # Your Twitter username without the @. E.g : thibaudlepretre
   #twitter = "alpedauye@hotmail.com"
@@ -73,10 +73,10 @@ canonifyurls = true
   url = "/archives"
 [[menu.main]]
   weight = 5
-  identifier = "about"
+  identifier = "Sobre mí"
   name = "Sobre mí"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
+  url = "/page/contacto/index.html"
 
 [[menu.links]]
   weight = 1
