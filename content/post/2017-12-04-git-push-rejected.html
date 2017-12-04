@@ -1,0 +1,36 @@
+---
+title: Git push rejected
+author: Alberto PedauyÃ© Paredes
+date: '2017-12-04'
+slug: git-push-rejected
+categories:
+  - R
+  - Github
+tags:
+  - error
+keywords:
+  - git push
+  - problema
+  - rejected
+  - error
+comments: true
+---
+
+
+
+<p>Después de haber estado trabajando en uno de los post y estar satisfecho con los resultados que se muestran en el servidor local de R, me dispongo a actualizar los archivos y subirlos al repositorio de Github para que Netlify los coja y muestre las actualizaciones de la web. Para ello, sigo los pasos de costumbre:</p>
+<ol style="list-style-type: decimal">
+<li>Click en la pestaña de <code>Commit</code></li>
+<li>Marco todos los cambios realizados y los selecciono como <code>Staged</code></li>
+<li>Escribo el comentario para el commit en el que describo los nuevos cambios</li>
+<li>Subo los cambios con <code>git push</code></li>
+</ol>
+<p>Sin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se muestra el siguiente resultado.</p>
+<pre class="r"><code>To https://github.com/pedauye/mydeeplearning
+ ! [rejected]        master -&gt; master (fetch first)
+error: failed to push some refs to &#39;https://github.com/pedauye/mydeeplearning&#39;
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., &#39;git pull ...&#39;) before pushing again.
+hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.</code></pre>

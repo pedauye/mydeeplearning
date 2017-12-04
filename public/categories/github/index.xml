@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on My Deep Learning</title>
+    <link>/categories/github/</link>
+    <description>Recent content in Github on My Deep Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
+    <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
+    <lastBuildDate>Mon, 04 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Git push rejected</title>
+      <link>/2017/12/git-push-rejected/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
+      <guid>/2017/12/git-push-rejected/</guid>
+      <description>Después de haber estado trabajando en uno de los post y estar satisfecho con los resultados que se muestran en el servidor local de R, me dispongo a actualizar los archivos y subirlos al repositorio de Github para que Netlify los coja y muestre las actualizaciones de la web. Para ello, sigo los pasos de costumbre:
+Click en la pestaña de CommitMarco todos los cambios realizados y los selecciono como StagedEscribo el comentario para el commit en el que describo los nuevos cambiosSubo los cambios con git pushSin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se muestra el siguiente resultado.</description>
+    </item>
+    
+  </channel>
+</rss>
