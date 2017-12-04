@@ -13,9 +13,12 @@ keywords:
   - problema
   - rejected
   - error
+  - fallo de carga
+  - fallo
+  - git push
+  - git pull
 comments: true
 ---
-
 Después de haber estado trabajando en uno de los post y estar satisfecho con los resultados que se muestran en el servidor local de R, me dispongo a actualizar los archivos y subirlos al repositorio de Github para que Netlify los coja y muestre las actualizaciones de la web. Para ello, sigo los pasos de costumbre:
 
 1. Click en la pestaña de `Commit`
@@ -23,12 +26,12 @@ Después de haber estado trabajando en uno de los post y estar satisfecho con lo
 1. Escribo el comentario para el commit en el que describo los nuevos cambios
 1. Subo los cambios con `git push`
 
-Sin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se muestra el siguiente resultado.
+Sin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se imprime el siguiente resultado.
 
 ```{r rejected git push, eval=FALSE}
-To https://github.com/pedauye/mydeeplearning
+To https://github.com/pedauye/mydeeplearning.git
  ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'https://github.com/pedauye/mydeeplearning'
+error: failed to push some refs to 'https://github.com/pedauye/mydeeplearning.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -36,3 +39,20 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
+Para solucionar solucionar esto he procedido de la siguiente manera.
+
+1. Entro al terminal
+1. Accedo a la carpeta sincronizada con Github mediante `cd`
+1. Compruebo que el commit se ha realizado correctamente con `git status`
+1. Hago el pull de los cambios con `git pull origin master`
+1. Subo los cambios con `git push`
+
+De esta forma, ya se han actualizado los archivos en el repositorio de Github y Netlify imprime la web con los cambios realizados.
+
+## Nota sobre por qué pasa esto
+
+Cuando una actualización cambia una rama cuyo commit anterior era A por un commit nuevo B, a esta actualización se le llama actualización de avance rápido (fast-fordward update) si y solo si B es descendiente de A. Es de tal forma que, el conjunto de commits que el commit original A ha construido son un subconjunto de commits que el nuevo commit B construye a partir de él.
+
+Si como en nuestro caso, el historial del commit que queremos subir no concuerda con el que se encuentra en la actualidad liderando el repositorio, salta el aviso que hemos visto anteriormente que nos dice que los archivos que tenemos en nuestro repositorio local no tienen el mismo historial que el que estamos intentando modificar.
+
+Para subsanar este problema es por lo que se llama a la función `git pull`, que extrae y copia el historial del repsoitorio para así asemejarlo al local con el que se esta trabajando, y poder realizar el `git push` correctamente.

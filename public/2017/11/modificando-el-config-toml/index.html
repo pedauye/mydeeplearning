@@ -28,15 +28,18 @@
     
 
     
-    <meta name="description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
-    <meta property="og:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
+    <meta name="description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
+IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
+    <meta property="og:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
+IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Modificando el config.toml">
     <meta property="og:url" content="/2017/11/modificando-el-config-toml/">
     <meta property="og:site_name" content="My Deep Learning">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="My Deep Learning">
-    <meta name="twitter:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
+    <meta name="twitter:description" content="¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
+IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.">
     
     
 
@@ -209,7 +212,12 @@ ga('send', 'pageview');
     
       <time itemprop="datePublished" datetime="2017-11-30T00:00:00Z">
         
-  Noviembre 30, 2017
+  
+  
+  
+  
+    30 Noviembre 2017
+  
 
       </time>
     
@@ -238,17 +246,12 @@ ga('send', 'pageview');
 </div>
 <div id="adaptandolo-a-mi-pagina" class="section level1">
 <h1>Adaptándolo a mi página</h1>
+<p>Estas son las modificaciones más importantes y que me ha llevado más tiempo realizar.</p>
 <div id="idioma" class="section level2">
 <h2>Idioma</h2>
 <p>El primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en <code>Tools -&gt; Global Options -&gt; Spelling</code> y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo <code>config.toml</code> y en la línea de comando <code>defaultContentLanguage</code> cambiamos el idioma a castellano.</p>
 <pre class="r"><code>defaultContentLanguaje = &quot;es-es&quot;</code></pre>
-<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web. ## Identificadores de página El siguiente cambio es modificar los indentificadores del menu de tal forma que en la línea de código de cada menu sobrescribimos nuestro identificador de sección. Un ejemplo de esto es:</p>
-<pre class="r"><code>[[menu.main]]
-  weight = 1
-  identifier = &quot;Inicio&quot;
-  name = &quot;Home&quot;
-  pre = &quot;&lt;i class=\&quot;sidebar-button-icon fa fa-lg fa-home\&quot;&gt;&lt;/i&gt;&quot;
-  url = &quot;/&quot;</code></pre>
+<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web.</p>
 </div>
 <div id="anadir-opcion-de-compartir-en-linkedin" class="section level2">
 <h2>Añadir opción de compartir en Linkedin</h2>
@@ -258,9 +261,6 @@ ga('send', 'pageview');
     icon = &quot;fa-linkedin&quot;
     url = &quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=%s&quot;</code></pre>
 <p>De este trozo de código la parte más importante es la url. En la página para desarrolladores de <a href="https://developer.linkedin.com/docs/share-on-linkedin">Linkedin</a> te proporcionan las urls, la cual hay que modificar para adaptarla a la página. En nuestro caso tenemos que ir a la pestaña de <strong>Customized URL</strong> y coger el link que ahí se aporta. A este link le añadiremos <code>Article?mini=true&amp;url=%s</code>.</p>
-</div>
-<div id="siguiente-paso" class="section level2">
-<h2>Siguiente paso</h2>
 </div>
 </div>
 
@@ -544,7 +544,7 @@ ga('send', 'pageview');
                 </span>
               </span>
               <div class="media-content hide-xs font-merryweather">Después de haber estado trabajando en uno de los post y estar satisfecho con los resultados que se muestran en el servidor local de R, me dispongo a actualizar los archivos y subirlos al repositorio de Github para que Netlify los coja y muestre las actualizaciones de la web. Para ello, sigo los pasos de costumbre:
-Click en la pestaña de CommitMarco todos los cambios realizados y los selecciono como StagedEscribo el comentario para el commit en el que describo los nuevos cambiosSubo los cambios con git pushSin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se muestra el siguiente resultado.</div>
+Click en la pestaña de CommitMarco todos los cambios realizados y los selecciono como StagedEscribo el comentario para el commit en el que describo los nuevos cambiosSubo los cambios con git pushSin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se imprime el siguiente resultado.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -561,7 +561,8 @@ Click en la pestaña de CommitMarco todos los cambios realizados y los seleccio
                   Nov 11, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaIdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.</div>
+              <div class="media-content hide-xs font-merryweather">¿Qué es el config.toml?Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
+IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -578,7 +579,7 @@ Click en la pestaña de CommitMarco todos los cambios realizados y los seleccio
                   Nov 11, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Primero de todo quiero darte las gracias por visitar mi blog. Quiero que sepas es que este blog, en parte, es más para mi que para ti puesto que su misión principal es que aprenda nuevas habilidades y que pueda recordar aquellas que tengo oxidadas. Por tanto los artículos de este blog van a ser procedimentales y personales, escritos para mí. Sin embargo, la razón por la que subo este contenido a interne (además de para aprender a cómo hacerlo), es para que sirva a aquellos que lo lean a ahorrar tiempo en aprender sobre las cosas de las que hablo, o simplemente a ver la forma de hacerlo que a mi me ha funcionado.</div>
+              <div class="media-content hide-xs font-merryweather">Primero de todo quiero darte las gracias por visitar mi blog. Quiero que sepas es que este blog, en parte, es más para mi que para ti puesto que su misión principal es que aprenda nuevas habilidades y que pueda recordar aquellas que tengo oxidadas. Por tanto los artículos de este blog van a ser procedimentales y personales, escritos para mí. Sin embargo, la razón por la que subo este contenido a internet (además de para aprender a cómo hacerlo), es para que sirva a aquellos que lo lean a ahorrar tiempo en aprender sobre las cosas de las que hablo, o simplemente a ver la forma de hacerlo que a mi me ha funcionado.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>

@@ -20,7 +20,7 @@
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/2017/12/git-push-rejected/</guid>
       <description>Después de haber estado trabajando en uno de los post y estar satisfecho con los resultados que se muestran en el servidor local de R, me dispongo a actualizar los archivos y subirlos al repositorio de Github para que Netlify los coja y muestre las actualizaciones de la web. Para ello, sigo los pasos de costumbre:
-Click en la pestaña de CommitMarco todos los cambios realizados y los selecciono como StagedEscribo el comentario para el commit en el que describo los nuevos cambiosSubo los cambios con git pushSin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se muestra el siguiente resultado.</description>
+Click en la pestaña de CommitMarco todos los cambios realizados y los selecciono como StagedEscribo el comentario para el commit en el que describo los nuevos cambiosSubo los cambios con git pushSin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se imprime el siguiente resultado.</description>
     </item>
     
   </channel>

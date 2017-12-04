@@ -2,7 +2,7 @@
 title: Modificando el config.toml
 author: Alberto PedauyÃ© Paredes
 date: '2017-11-30'
-#draft: TRUE
+draft: TRUE
 slug: modificando-el-config-toml
 categories:
   - R
@@ -28,17 +28,12 @@ comments: true
 </div>
 <div id="adaptandolo-a-mi-pagina" class="section level1">
 <h1>Adaptándolo a mi página</h1>
+<p>Estas son las modificaciones más importantes y que me ha llevado más tiempo realizar.</p>
 <div id="idioma" class="section level2">
 <h2>Idioma</h2>
 <p>El primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en <code>Tools -&gt; Global Options -&gt; Spelling</code> y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo <code>config.toml</code> y en la línea de comando <code>defaultContentLanguage</code> cambiamos el idioma a castellano.</p>
 <pre class="r"><code>defaultContentLanguaje = &quot;es-es&quot;</code></pre>
-<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web. ## Identificadores de página El siguiente cambio es modificar los indentificadores del menu de tal forma que en la línea de código de cada menu sobrescribimos nuestro identificador de sección. Un ejemplo de esto es:</p>
-<pre class="r"><code>[[menu.main]]
-  weight = 1
-  identifier = &quot;Inicio&quot;
-  name = &quot;Home&quot;
-  pre = &quot;&lt;i class=\&quot;sidebar-button-icon fa fa-lg fa-home\&quot;&gt;&lt;/i&gt;&quot;
-  url = &quot;/&quot;</code></pre>
+<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web.</p>
 </div>
 <div id="anadir-opcion-de-compartir-en-linkedin" class="section level2">
 <h2>Añadir opción de compartir en Linkedin</h2>
@@ -48,8 +43,5 @@ comments: true
     icon = &quot;fa-linkedin&quot;
     url = &quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=%s&quot;</code></pre>
 <p>De este trozo de código la parte más importante es la url. En la página para desarrolladores de <a href="https://developer.linkedin.com/docs/share-on-linkedin">Linkedin</a> te proporcionan las urls, la cual hay que modificar para adaptarla a la página. En nuestro caso tenemos que ir a la pestaña de <strong>Customized URL</strong> y coger el link que ahí se aporta. A este link le añadiremos <code>Article?mini=true&amp;url=%s</code>.</p>
-</div>
-<div id="siguiente-paso" class="section level2">
-<h2>Siguiente paso</h2>
 </div>
 </div>
