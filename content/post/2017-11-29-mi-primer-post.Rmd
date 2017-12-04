@@ -4,11 +4,9 @@ author: Alberto PedauyÃ© Paredes
 date: '2017-11-29'
 slug: mi-primer-post
 description: "Primer post, donde hablo de como va a funcionar el blog y de sobre los temas que se van a tratar"
-categories:
-  - R
-  - Diversos
 tags:
   - Discusión
+  - Diversos
 ---
 
 Primero de todo quiero darte las gracias por visitar mi blog. Quiero que sepas es que este blog, en parte, es más para mi que para ti puesto que su misión principal es que aprenda nuevas habilidades y que pueda recordar aquellas que tengo oxidadas. Por tanto los artículos de este blog van a ser procedimentales y personales, escritos para mí. Sin embargo, la razón por la que subo este contenido a internet (además de para aprender a cómo hacerlo), es para que sirva a aquellos que lo lean a ahorrar tiempo en aprender sobre las cosas de las que hablo, o simplemente a ver la forma de hacerlo que a mi me ha funcionado.

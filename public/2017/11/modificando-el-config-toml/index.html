@@ -28,21 +28,18 @@
     
 
     
-    <meta name="description" content="¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web
-Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
-IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje.">
-    <meta property="og:description" content="¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web
-Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
-IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje.">
+    <meta name="description" content="¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
+La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.">
+    <meta property="og:description" content="¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
+La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Modificando el config.toml">
     <meta property="og:url" content="/2017/11/modificando-el-config-toml/">
     <meta property="og:site_name" content="My Deep Learning">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="My Deep Learning">
-    <meta name="twitter:description" content="¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web
-Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
-IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje.">
+    <meta name="twitter:description" content="¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
+La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.">
     
     
 
@@ -116,7 +113,7 @@ ga('send', 'pageview');
         </a>
         <h4 class="sidebar-profile-name">Alberto Pedauyé Paredes</h4>
         
-          <h5 class="sidebar-profile-bio">Aprender, compartir y <strong>RECORDAR</strong></h5>
+          <h5 class="sidebar-profile-bio">Si internet sabe hacerlo <strong>¡yo también!</strong></h5>
         
       </div>
     
@@ -129,16 +126,6 @@ ga('send', 'pageview');
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
       <span class="sidebar-button-desc">Inicio</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/categories">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-      
-      <span class="sidebar-button-desc">Categorías</span>
     </a>
   </li>
 
@@ -186,6 +173,16 @@ ga('send', 'pageview');
     </a>
   </li>
 
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/mailto:alpedauye@hotmail.com">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Hotmail</span>
+    </a>
+  </li>
+
 
     </ul>
     <ul class="sidebar-buttons">
@@ -225,28 +222,24 @@ ga('send', 'pageview');
       </time>
     
     
-  
-  
-    <span>en</span>
-    
-      <a class="category-link" href="/categories/r">R</a>
-    
-  
-
   </div>
 
 </div>
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <!--more-->
-<h1 id="table-of-contents">Tabla de contenido</h1>
-<div id="que-es-el-config.toml" class="section level1">
+              <div id="que-es-el-config.toml" class="section level1">
 <h1>¿Qué es el config.toml?</h1>
-<p>El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web</p>
-</div>
-<div id="modificaciones-que-se-pueden-hacer" class="section level1">
-<h1>Modificaciones que se pueden hacer</h1>
+<p>El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.</p>
+<p>La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual. Para ello hay que tener en cuenta dos cosas: las cadenas de valores deben ir entre comillas y los valores booleanos en minúsculas y sin comillas.</p>
+<p>Los valores entre corchetes rectos son la representación de una tabla en este lenguaje y serán utilizados por Hugo para rellenar la información de las páginas dentro de la web.</p>
+<p>Por otra parte, los valores entre dobles corchetes rectos corresponden con un conjunto de tablas y son interpretados por Hugo como un menu. Un ejemplo de esto es uno de los menus que hay dentro de mi documento <code>config.toml</code>.</p>
+<pre class="r"><code>[[menu.main]]
+  weight = 1
+  identifier = &quot;Inicio&quot;
+  name = &quot;Home&quot;
+  pre = &quot;&lt;i class=\&quot;sidebar-button-icon fa fa-lg fa-home\&quot;&gt;&lt;/i&gt;&quot;
+  url = &quot;/&quot;</code></pre>
 </div>
 <div id="adaptandolo-a-mi-pagina" class="section level1">
 <h1>Adaptándolo a mi página</h1>
@@ -282,6 +275,8 @@ ga('send', 'pageview');
   <a class="tag tag--primary tag--small" href="/tags/configuraci%C3%B3n/">Configuración</a>
 
   <a class="tag tag--primary tag--small" href="/tags/google-analytics/">google analytics</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/r/">R</a>
 
                   </div>
                 
@@ -353,7 +348,7 @@ ga('send', 'pageview');
       
       <li class="post-action">
         
-          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+          <a class="post-action-btn btn btn--default" href="#">
         
           <i class="fa fa-list"></i>
         </a>
@@ -445,7 +440,7 @@ ga('send', 'pageview');
       
       <li class="post-action">
         
-          <a class="post-action-btn btn btn--default" href="#table-of-contents">
+          <a class="post-action-btn btn btn--default" href="#">
         
           <i class="fa fa-list"></i>
         </a>
@@ -498,7 +493,7 @@ ga('send', 'pageview');
     
     <h4 id="about-card-name">Alberto Pedauyé Paredes</h4>
     
-      <div id="about-card-bio">Aprender, compartir y <strong>RECORDAR</strong></div>
+      <div id="about-card-bio">Si internet sabe hacerlo <strong>¡yo también!</strong></div>
     
     
       <div id="about-card-job">
@@ -565,9 +560,8 @@ Click en la pestaña de CommitMarco todos los cambios realizados y los seleccio
                   Nov 11, 2017
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web
-Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
-IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&gt; Global Options -&gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje.</div>
+              <div class="media-content hide-xs font-merryweather">¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
+La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>

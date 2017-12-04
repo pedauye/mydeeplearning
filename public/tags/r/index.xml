@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My Deep Learning</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on My Deep Learning</description>
+    <title>R on My Deep Learning</title>
+    <link>/tags/r/</link>
+    <description>Recent content in R on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
     <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
     <lastBuildDate>Mon, 04 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -31,15 +31,6 @@ Click en la pestaña de CommitMarco todos los cambios realizados y los seleccio
       <guid>/2017/11/modificando-el-config-toml/</guid>
       <description>¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
 La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.</description>
-    </item>
-    
-    <item>
-      <title>Mi primer post</title>
-      <link>/2017/11/mi-primer-post/</link>
-      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
-      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
-      <guid>/2017/11/mi-primer-post/</guid>
-      <description>Primero de todo quiero darte las gracias por visitar mi blog. Quiero que sepas es que este blog, en parte, es más para mi que para ti puesto que su misión principal es que aprenda nuevas habilidades y que pueda recordar aquellas que tengo oxidadas. Por tanto los artículos de este blog van a ser procedimentales y personales, escritos para mí. Sin embargo, la razón por la que subo este contenido a internet (además de para aprender a cómo hacerlo), es para que sirva a aquellos que lo lean a ahorrar tiempo en aprender sobre las cosas de las que hablo, o simplemente a ver la forma de hacerlo que a mi me ha funcionado.</description>
     </item>
     
   </channel>

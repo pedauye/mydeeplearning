@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on My Deep Learning</title>
-    <link>/categories/r/</link>
-    <description>Recent content in R on My Deep Learning</description>
+    <title>Diversos on My Deep Learning</title>
+    <link>/tags/diversos/</link>
+    <description>Recent content in Diversos on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
     <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
-    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/diversos/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Modificando el config.toml</title>
-      <link>/2017/11/modificando-el-config-toml/</link>
-      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
-      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
-      <guid>/2017/11/modificando-el-config-toml/</guid>
-      <description>¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
-La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.</description>
-    </item>
     
     <item>
       <title>Mi primer post</title>

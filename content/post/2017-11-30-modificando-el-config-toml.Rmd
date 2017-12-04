@@ -4,24 +4,37 @@ author: Alberto PedauyÃ© Paredes
 date: '2017-11-30'
 draft: TRUE
 slug: modificando-el-config-toml
-categories:
-  - R
 tags:
   - Configuración
   - google analytics
+  - R
 keywords:
   - config.toml
   - modificar
   - mis gustos
 comments: true
+output:
+  html_document:
+    toc: true
 ---
-<!--more-->
-<!-- toc -->
 #¿Qué es el config.toml?
 
-El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web
+El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
 
-# Modificaciones que se pueden hacer
+La sintáxis de escritura de este documento es TOML (Tom's Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual. Para ello hay que tener en cuenta dos cosas: las cadenas de valores deben ir entre comillas y los valores booleanos en minúsculas y sin comillas.
+
+Los valores entre corchetes rectos son la representación de una tabla en este lenguaje y serán utilizados por Hugo para rellenar la información de las páginas dentro de la web.
+
+Por otra parte, los valores entre dobles corchetes rectos corresponden con un conjunto de tablas y son interpretados por Hugo como un menu. Un ejemplo de esto es uno de los menus que hay dentro de mi documento `config.toml`.
+
+```{r Cambio de identificadores, eval=FALSE}
+[[menu.main]]
+  weight = 1
+  identifier = "Inicio"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+```
 
 # Adaptándolo a mi página
 

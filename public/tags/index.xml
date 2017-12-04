@@ -32,6 +32,15 @@
     </item>
     
     <item>
+      <title>Diversos</title>
+      <link>/tags/diversos/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
+      <guid>/tags/diversos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Error</title>
       <link>/tags/error/</link>
       <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
@@ -41,11 +50,29 @@
     </item>
     
     <item>
+      <title>Github</title>
+      <link>/tags/github/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
+      <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Google Analytics</title>
       <link>/tags/google-analytics/</link>
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/tags/google-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     

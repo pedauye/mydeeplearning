@@ -4,28 +4,34 @@ author: Alberto PedauyÃ© Paredes
 date: '2017-11-30'
 draft: TRUE
 slug: modificando-el-config-toml
-categories:
-  - R
 tags:
   - Configuración
   - google analytics
+  - R
 keywords:
   - config.toml
   - modificar
   - mis gustos
 comments: true
+output:
+  html_document:
+    toc: true
 ---
 
 
 
-<!--more-->
-<!-- toc -->
 <div id="que-es-el-config.toml" class="section level1">
 <h1>¿Qué es el config.toml?</h1>
-<p>El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web</p>
-</div>
-<div id="modificaciones-que-se-pueden-hacer" class="section level1">
-<h1>Modificaciones que se pueden hacer</h1>
+<p>El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.</p>
+<p>La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual. Para ello hay que tener en cuenta dos cosas: las cadenas de valores deben ir entre comillas y los valores booleanos en minúsculas y sin comillas.</p>
+<p>Los valores entre corchetes rectos son la representación de una tabla en este lenguaje y serán utilizados por Hugo para rellenar la información de las páginas dentro de la web.</p>
+<p>Por otra parte, los valores entre dobles corchetes rectos corresponden con un conjunto de tablas y son interpretados por Hugo como un menu. Un ejemplo de esto es uno de los menus que hay dentro de mi documento <code>config.toml</code>.</p>
+<pre class="r"><code>[[menu.main]]
+  weight = 1
+  identifier = &quot;Inicio&quot;
+  name = &quot;Home&quot;
+  pre = &quot;&lt;i class=\&quot;sidebar-button-icon fa fa-lg fa-home\&quot;&gt;&lt;/i&gt;&quot;
+  url = &quot;/&quot;</code></pre>
 </div>
 <div id="adaptandolo-a-mi-pagina" class="section level1">
 <h1>Adaptándolo a mi página</h1>

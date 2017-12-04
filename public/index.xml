@@ -29,9 +29,8 @@ Click en la pestaña de CommitMarco todos los cambios realizados y los seleccio
       <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/2017/11/modificando-el-config-toml/</guid>
-      <description>¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web
-Modificaciones que se pueden hacerAdaptándolo a mi páginaEstas son las modificaciones más importantes y que me ha llevado más tiempo realizar.
-IdiomaEl primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en Tools -&amp;gt; Global Options -&amp;gt; Spelling y una vez aquí cambiamos el diccionario principal del lenguaje.</description>
+      <description>¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
+La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.</description>
     </item>
     
     <item>
