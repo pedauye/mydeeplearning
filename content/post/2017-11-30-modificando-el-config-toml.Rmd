@@ -19,6 +19,8 @@ comments: true
 <!-- toc -->
 #¿Qué es el config.toml?
 
+El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web
+
 # Modificaciones que se pueden hacer
 
 # Adaptándolo a mi página
