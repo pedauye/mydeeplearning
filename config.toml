@@ -21,6 +21,8 @@ disqusShortname = "hugo-tranquilpeak-theme"
 googleAnalytics = "UA-110461966-1"
 paginate = 7
 canonifyurls = true
+footnoteReturnLinkContents = "<sup>^</sup>"
+
 
 [permalinks]
   post = "/:year/:month/:slug/"
@@ -88,7 +90,7 @@ canonifyurls = true
   weight = 2
   identifier = "hotmail"
   name = "Hotmail"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-paper-plane\"></i>"
   url = "mailto:alpedauye@hotmail.com"
 #[[menu.links]]
   #weight = 2
