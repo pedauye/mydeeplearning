@@ -14,6 +14,15 @@
     
     
     <item>
+      <title>Blog</title>
+      <link>/tags/blog/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
+      <guid>/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Configuración</title>
       <link>/tags/configuraci%C3%B3n/</link>
       <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
@@ -55,15 +64,6 @@
       <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Google Analytics</title>
-      <link>/tags/google-analytics/</link>
-      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
-      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
-      <guid>/tags/google-analytics/</guid>
       <description></description>
     </item>
     

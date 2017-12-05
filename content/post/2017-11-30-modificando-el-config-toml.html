@@ -1,13 +1,13 @@
 ---
-title: Modificando el config.toml
+title: Modificando el config.toml (En construcción)
 author: Alberto PedauyÃ© Paredes
 date: '2017-12-05'
 draft: TRUE
 slug: modificando-el-config-toml
 tags:
   - Configuración
-  - google analytics
   - R
+  - blog
 keywords:
   - config.toml
   - modificar
@@ -23,9 +23,8 @@ output:
 <div id="que-es-el-config.toml" class="section level1">
 <h1>¿Qué es el config.toml?</h1>
 <p>El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.</p>
-<p>La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual. Para ello hay que tener en cuenta dos cosas: las cadenas de valores deben ir entre comillas y los valores booleanos en minúsculas y sin comillas.</p>
-<p>Los valores entre corchetes rectos son la representación de una tabla en este lenguaje y serán utilizados por Hugo para rellenar la información de las páginas dentro de la web.</p>
-<p>Por otra parte, los valores entre dobles corchetes rectos corresponden con un conjunto de tablas y son interpretados por Hugo como un menu. Un ejemplo de esto es uno de los menus que hay dentro de mi documento <code>config.toml</code>.</p>
+<p>La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor a continuación del signo igual. Para ello hay que tener en cuenta dos cosas: las cadenas de valores deben ir entre comillas y los valores booleanos en minúsculas y sin comillas.</p>
+<p>Por otra parte, dentro de la sintáxis TOML se expecifican dos recursos más: corchetes rectos y dobles corchetes rectos. Los valores entre corchetes rectos son la representación de una tabla en este lenguaje y serán utilizados por Hugo para rellenar la información de las páginas dentro de la web. En cambio, los valores entre dobles corchetes rectos corresponden con un conjunto de tablas y son interpretados por Hugo como un menu. Un ejemplo de esto último es uno de los menus que hay dentro de mi documento <code>config.toml</code>.</p>
 <pre class="r"><code>[[menu.main]]
   weight = 1
   identifier = &quot;Inicio&quot;
@@ -35,12 +34,12 @@ output:
 </div>
 <div id="adaptandolo-a-mi-pagina" class="section level1">
 <h1>Adaptándolo a mi página</h1>
-<p>Estas son las modificaciones más importantes y que me ha llevado más tiempo realizar.</p>
+<p>Estas son las modificaciones más importantes y que me han llevado más tiempo realizar.</p>
 <div id="idioma" class="section level2">
 <h2>Idioma</h2>
-<p>El primer cambio sobre el config.toml es cambiar el idioma por defecto del contenido. Para ello, entramos en <code>Tools -&gt; Global Options -&gt; Spelling</code> y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo <code>config.toml</code> y en la línea de comando <code>defaultContentLanguage</code> cambiamos el idioma a castellano.</p>
+<p>La primera modificación en el config.toml es cambiar el idioma por defecto del contenido. Para ello, dentro de la IDE de RStudio entramos en la pestaña <code>Tools -&gt; Global Options -&gt; Spelling</code> de la barra de herramientas y una vez aquí cambiamos el diccionario principal del lenguaje. Es posible que al intentar realizar esto solamente encontremos por defecto los diccionarios en inglés, sin embargo, encontraremos una pestaña que nos permitirá descargar el resto de diccionarios. Después de esto, entramos en el archivo <code>config.toml</code> y en la línea de comando <code>defaultContentLanguage</code> cambiamos el idioma a castellano.</p>
 <pre class="r"><code>defaultContentLanguaje = &quot;es-es&quot;</code></pre>
-<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin el no funcionarán el control del lenguaje a la hora de compilar la web.</p>
+<p>Este cambio viene indicado en documento para el usuario, aunque con un error, ya que solamente se especifica que se introduzca <code>es</code> cuando realmente el archivo .yaml esta guardado como <code>es-es.yaml</code>. Este cambio es importante y sin él no funcionará el control del lenguaje a la hora de compilar la web.</p>
 </div>
 <div id="anadir-opcion-de-compartir-en-linkedin" class="section level2">
 <h2>Añadir opción de compartir en Linkedin</h2>
@@ -49,6 +48,6 @@ output:
     name = &quot;Linkedin&quot;
     icon = &quot;fa-linkedin&quot;
     url = &quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=%s&quot;</code></pre>
-<p>De este trozo de código la parte más importante es la url. En la página para desarrolladores de <a href="https://developer.linkedin.com/docs/share-on-linkedin">Linkedin</a> te proporcionan las urls, la cual hay que modificar para adaptarla a la página. En nuestro caso tenemos que ir a la pestaña de <strong>Customized URL</strong> y coger el link que ahí se aporta. A este link le añadiremos <code>Article?mini=true&amp;url=%s</code>.</p>
+<p>De este trozo de código la parte más importante es la url. En la página para desarrolladores de <a href="https://developer.linkedin.com/docs/share-on-linkedin">Linkedin</a> te proporcionan las urls, la cual hay que modificar para adaptarla a la página. En nuestro caso tenemos que ir a la pestaña de <strong>Customized URL</strong> y coger el link que ahí se aporta. A este link habrá que añadirle <code>Article?mini=true&amp;url=%s</code> para que de tal forma haga referencia al post que se quiere compartir.</p>
 </div>
 </div>
