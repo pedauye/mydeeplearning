@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2017/12/git-push-rejected/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <loc>/2017/12/modificando-el-config-toml/</loc>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/11/modificando-el-config-toml/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <loc>/2017/12/git-push-rejected/</loc>
+    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -29,7 +29,7 @@
   
   <url>
     <loc>/tags/configuraci%C3%B3n/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -63,13 +63,13 @@
   
   <url>
     <loc>/tags/google-analytics/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -80,19 +80,19 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-11-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

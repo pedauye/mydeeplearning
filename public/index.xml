@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
     <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
-    <lastBuildDate>Mon, 04 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Modificando el config.toml</title>
+      <link>/2017/12/modificando-el-config-toml/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
+      <guid>/2017/12/modificando-el-config-toml/</guid>
+      <description>¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
+La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.</description>
+    </item>
     
     <item>
       <title>Git push rejected</title>
@@ -21,16 +31,6 @@
       <guid>/2017/12/git-push-rejected/</guid>
       <description>Después de haber estado trabajando en uno de los post y estar satisfecho con los resultados que se muestran en el servidor local de R, me dispongo a actualizar los archivos y subirlos al repositorio de Github para que Netlify los coja y muestre las actualizaciones de la web. Para ello, sigo los pasos de costumbre:
 Click en la pestaña de CommitMarco todos los cambios realizados y los selecciono como StagedEscribo el comentario para el commit en el que describo los nuevos cambiosSubo los cambios con git pushSin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se imprime el siguiente resultado.</description>
-    </item>
-    
-    <item>
-      <title>Modificando el config.toml</title>
-      <link>/2017/11/modificando-el-config-toml/</link>
-      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
-      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
-      <guid>/2017/11/modificando-el-config-toml/</guid>
-      <description>¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
-La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo de igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor del igual.</description>
     </item>
     
     <item>
