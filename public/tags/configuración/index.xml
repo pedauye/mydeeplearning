@@ -8,19 +8,18 @@
     <language>en-us</language>
     <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
     <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
-    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/configuraci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Modificando el config.toml (En construcción)</title>
-      <link>/2017/12/modificando-el-config-toml/</link>
-      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      <title>Crear un blog con RStudio, Github y Netlify</title>
+      <link>/2017/12/crear-un-blog-con-rstudio-github-y-netlify/</link>
+      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
-      <guid>/2017/12/modificando-el-config-toml/</guid>
-      <description>¿Qué es el config.toml?El config.toml es el archivo de configuración en donde se pueden especificar las características globales de la web. Además, también es el primer archivo que Hugo (generador web estático) buscará a la hora de generar la página.
-La sintáxis de escritura de este documento es TOML (Tom’s Obvious Minimal Language), que básicamente consiste en pares clave-valor separadas por un signo igual. Cuando quieres editar la configuración en el archivo TOML, simplemente tienes que cambiar el valor a continuación del signo igual.</description>
+      <guid>/2017/12/crear-un-blog-con-rstudio-github-y-netlify/</guid>
+      <description></description>
     </item>
     
   </channel>

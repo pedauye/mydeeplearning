@@ -1,0 +1,165 @@
+---
+title: Crear un blog con RStudio, Github y Netlify
+author: Alberto PedauyÃ© Paredes
+date: '2017-12-11'
+slug: crear-un-blog-con-rstudio-github-y-netlify
+thumbnailImagePosition: "top"
+thumbnailImage: http://res.cloudinary.com/peda/image/upload/c_scale,w_750/v1512981972/rr11-4_rxjwxw.jpg
+tags:
+  - blog
+  - Configuración
+  - R
+  - Github
+keywords:
+  - blog
+  - de cero
+  - Github
+  - RStudio
+  - hacer un blog
+  - empezar
+  - post
+  - web
+  - como hacer un blog con Rmarkdown
+  - Rmarkdown
+---
+
+
+
+<div class="figure">
+<img src="http://res.cloudinary.com/peda/image/upload/c_scale,w_750/v1512981972/rr11-4_rxjwxw.jpg" />
+
+</div>
+<div id="motivo-por-el-que-hacer-un-blog" class="section level1">
+<h1>Motivo por el que hacer un blog</h1>
+<p>En la mayoría de los libros, posts y pequeños proyectos que he ido leyendo por internet sugerían la idea de hacer un blog. Estos coincidían en que escribir un post te obliga a sentarte y concentrarte en una idea que tienes que explicar lo suficientemente clara y concisa para que el resto la entienda. Hace que tus pensamientos se aclaren y tengas una comprensión mayor sobre ese conocimiento. Otro de los beneficios de hacerlo es que dejas por escrito un conocimiento que has adquirido para así, en un futuro recuperarlo si fuera el caso. Así, evitas volver a visitar los mismos foros, páginas web y libros que ya leíste en su momento puesto que has dejado escrita tu comprensión sobre algo en particular y los pasos a seguir para acometer su objetivo.</p>
+<p>Por estos motivos, dejo aquí los pasos desde cero que he seguido para subir este blog a internet.</p>
+</div>
+<div id="lista-de-contenido" class="section level1">
+<h1>Lista de contenido</h1>
+<ul>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#conocimientos-basicos-antes-de-empezar">Conocimientos básicos antes de empezar</a></p></li>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#primer-paso-github">Primer paso: Github</a></p></li>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#segundo-paso-terminal">Segundo paso: Terminal</a></p></li>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#tercer-paso-rstudio">Tercer paso: RStudio</a></p></li>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#cuarto-paso-construir-la-web">Cuarto paso: Construir la web</a></p></li>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#quinto-paso-los-posts">Quinto paso: Los posts</a></p></li>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#sexto-paso-netlify">Sexto paso: Netlify</a></p></li>
+<li><p><a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#el-flujo-de-trabajo-y-los-addins">El flujo de trabajo y los Addins</a></p></li>
+</ul>
+</div>
+<div id="conocimientos-basicos-antes-de-empezar" class="section level1">
+<h1>Conocimientos básicos antes de empezar</h1>
+<p>Para hacer la web me han sido necesarios una serie de conocimientos básicos sobre los programas que he utilizado para crearla. Dejo un listado de algunos de los libros imprescindibles:</p>
+<ul>
+<li><a href="http://r4ds.had.co.nz/index.html">R for Data Science</a>, primer libro que hay que leer para aprender a utilizar R y RStudio. Esta orientado al Data Science pero los primeros pasos son muy útiles para aprender el funcionamiento de R y la instalación de paquetes.</li>
+<li><a href="https://bookdown.org/yihui/blogdown/"><code>blogdown</code>: Creating Websites with R Markdown</a>, todo lo que se necesita aprender a la hora de utilizar RStudio y el paquete blogdown está aquí. Sin embargo, los pasos a seguir que indican para crear un blog no me han sido de utilidad.</li>
+<li><a href="https://github.com">Github</a>, es necesario tener una cuenta en Github que albergará el repositorio de la web. En Github se pueden encontrar muchos recursos para aprender Git y al crear la cuenta se hace una pequeña introducción al funcionamiento, como crear repositorios y como hacer los cambios.</li>
+<li>Conocimientos muy básicos sobre la terminal (en Windows -&gt; Símbolo del Sistema)</li>
+<li>Tener instalado Git para usar los comandos en Git Bash o en el terminal</li>
+</ul>
+</div>
+<div id="primer-paso-github" class="section level1">
+<h1>Primer paso: Github</h1>
+<ol style="list-style-type: decimal">
+<li>El primer paso es crear un repositorio en Github. Para ello, entramos en <a href="https://github.com">Github</a> y creamos una cuenta. Una vez que la tenemos nos aparecerá la opción de <code>Start a project</code> y redirigirá a los primeros pasos para crear el repositorio. Aquí rellenamos los cuadros de diálogo con el nombre de la carpeta y una pequeña descripción de su contenido. <strong>Es importante</strong> marcar la casilla de <code>README</code>.</li>
+</ol>
+<div class="figure">
+<img src="http://res.cloudinary.com/peda/image/upload/v1512981153/Sin_t%C3%ADtulo_tzaazj.png" />
+
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Una vez en la página principal del nuevo repositorio, vamos a la pestaña verde <code>Clone or download</code> y copiamos en el portapapeles la url del repositorio.</li>
+</ol>
+</div>
+<div id="segundo-paso-terminal" class="section level1">
+<h1>Segundo paso: Terminal</h1>
+<ol style="list-style-type: decimal">
+<li><p>Abrimos el terminal de Windows (Símbolo del Sistema) y nos deplazamos con el comando <code>cd</code> a la carpeta del ordenador donde queremos que esten los archivos físicos de la web.</p></li>
+<li><p><strong>Importante:</strong> Con Git instalado en el ordenador y el terminal ejecutandose en la carpeta elegida de nuestro ordenador escribimos el siguiente comando:</p></li>
+</ol>
+<pre class="r"><code>&gt; git clone [url de nuestro repositorio]</code></pre>
+<p>Con este comando se clona el repositorio que hemos creado en Github a nuestra carpeta y nos permitirá tenerlo actualizado a medida que vayamos progresando con la página web.</p>
+<p>{{% alert info %}} <strong>NOTA</strong>: Al elegir la carpeta donde quieres tener el repositorio de Github hay que tener en cuenta que cuando se ejecuta el comando <code>git clone</code> se descarga una carpeta (el repositorio), esto significa que si tus archivos los quieres tener en la ruta (ejemplo) <code>C:\Users\Alberto\Desktop\mydeeplearning</code>, <code>git clone</code> lo tienes que ejecutar en la ruta <code>C:\Users\Alberto\Desktop</code> {{% /alert %}}</p>
+</div>
+<div id="tercer-paso-rstudio" class="section level1">
+<h1>Tercer paso: RStudio</h1>
+<ol style="list-style-type: decimal">
+<li>Abrimos RStudio e instalamos blogdown o en su defecto devtools si no lo tienes instalado ya. Con el siguiente comando se instalarán los paquetes que falten de devtools o devtools al completo. Después de esto, instalamos Hugo.</li>
+</ol>
+<pre class="r"><code># Instalación devtools
+if (!requireNamespace(&quot;devtools&quot;)) install.packages(&quot;devtools&quot;)
+
+# Instalación Hugo
+blogdown::install_hugo()</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Creamos un nuevo proyecto. En la barra de herramientas pinchamos en <code>File - New Project... - Existing Repository</code> y una vez aquí buscamos la ruta de la carpeta donde tenemos nuestro repositorio.</p></li>
+<li><p>Una vez dentro de nuestro proyecto, vamos a la ventana de la interfaz de RStudio donde se encuentra <code>Files</code> y abrimos el archivo <code>.gitignore</code> que se encontrará en la carpeta principal del repositorio. Este archivo tendrá por defecto una serie de parámetros a los cuales nosotros le añadiremos <code>Thumbs.db</code> y <code>public/</code>. Las líneas de código del archivo deberán quedar así:</p></li>
+</ol>
+<pre class="r"><code>.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+blogdown
+Thumbs.db
+public/</code></pre>
+</div>
+<div id="cuarto-paso-construir-la-web" class="section level1">
+<h1>Cuarto paso: Construir la web</h1>
+<ol style="list-style-type: decimal">
+<li>Es momento de construir la web. Para ello ejecutaramos el siguiente comando:</li>
+</ol>
+<p>{{% alert info %}} <strong>NOTA</strong>: antes de hacerlo es importante saber varias cosas:</p>
+<ul>
+<li><p>Hay que elegir el estilo de la página. Este paso es fundamental puesto que una vez que elijas el tema estético de la web, este no podrá ser cambiado. Por tanto, hay que tomarse unos minutos en buscar y elegir el adecuado a tus gustos en la página <a href="https://themes.gohugo.io">Hugo themes</a>. El tema condicionará el funcionamiento de la web, el config.toml y las características que se le quieran añadir. Estos parámetros no suelen ser equivalentes entre temas por lo que normalmente no será posible el cambio de un tema a otro sin perder las modificaciones que se le hayan hecho. A la hora de elegir el tema también hay que tener en cuenta las actualizaciones que se le realizan. Esto significa que si el repositorio del tema no ha sido actualizado en mucho tiempo, es que no tiene un desarollo continuo y lo más probable es que tenga fallos de funcionamiento que no han sido reparados. Para instalar el tema elegido, al comando de creación de la página habrá que añadirle la ruta del repositorio de Github donde se encuentra el tema. (Pongo como ejemplo el tema que he elegido yo).</p></li>
+<li><p>Es posible ejecutar el comando a secas, <code>blogdown::new_site()</code>, siendo entonces el tema por defecto el que se instalará, lithium. {{% /alert %}}</p></li>
+</ul>
+<pre class="r"><code>blogdown::new_site(theme = &quot;kakawait/hugo-tranquilpeak-theme&quot;)</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Editar las opciones del proyecto. El siguiente paso es editar las opciones del proyecto para especificar que en lo que se está trabajando es una web. Para ello vamos a la barra de herramientas <code>Tools - Project Options...</code> y en la pestaña de <code>Build Tools - Project build tools</code> seleccionamos <code>Website</code>. Es importante también quitar el check de la casilla <code>Preview site after building</code>.</li>
+</ol>
+<div class="figure">
+<img src="http://res.cloudinary.com/peda/image/upload/v1512983440/opciones_de_proyecto_eqszl8.png" />
+
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Editar la configuración de la web. En este paso, entramos al config.toml donde están las características básicas de nuesto sitio web. El archivo config.toml es el primer documento que buscará Hugo para general la web. Es un documento importante que requiere tiempo por eso le voy a dedicar un post a parte.</li>
+</ol>
+</div>
+<div id="quinto-paso-los-posts" class="section level1">
+<h1>Quinto paso: Los posts</h1>
+<p>{{% alert danger %}} <strong>NOTA</strong>: para este paso hay que tener un poco claro <a href="http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#el-flujo-de-trabajo-y-los-addins">el flujo de trabajo y los Addins</a> {{% /alert %}}</p>
+<p>Simplemente hay que hacer click en el Addin <code>New Post</code> y rellenar los cuadros de diálogo con las características del nuevo post.</p>
+<p>Por lo que respecta al último elemento del cuadro de diálogo, a la hora de elegir el formato de archivo del post es <strong>importante</strong> leer la información que se explica sobre ello en <a href="https://bookdown.org/yihui/blogdown/output-format.html"><code>blogdown</code> book chapter on output formats</a>. Básicamente se explican las diferencias entre Markdown (.md) y Rmarkdown (.Rmd). Personalmente utilizo Rmarkdown para redactar los posts puesto que hace más fácil la tarea de incluir pedazos de código. Además, si el post que se está redactando tiene pedazos de código funcionales, es decir, que ejecutan una orden en R correctamente, se pueden introducir los resultados o gráficas fácilmente.</p>
+</div>
+<div id="sexto-paso-netlify" class="section level1">
+<h1>Sexto paso: Netlify</h1>
+<p>Finalmente lo último que queda por hacer es subir la web a <a href="https://www.netlify.com">Netlify</a>. Para ello, entramos en Netlify y nos registramos a través de nuestra cuenta de Github. Después presionamos sobre la pestaña <code>New site from Git</code> y seguimos los pasos que se nos muestran para crear la web. Estos son los siguientes:</p>
+<ol style="list-style-type: decimal">
+<li>En el panel de Continuous Deployment elegimos la opción de Github</li>
+<li>Tras conectar con nuestra cuenta de Github (paso que hará automáticamente o pedirá conectarse) seleccionamos el repositorio donde tenemos los archivos de la web</li>
+<li>Por último en las Building Options, en la opción Branch to deploy dejamos master por defecto. En cuanto a las opciones de construcción:</li>
+</ol>
+<ul>
+<li>Build command: será el comando que utilice Netlify para generar la web. Por defecto podríamos poner <code>hugo</code>, sin embargo, esto generaría la página con la versión de hugo 0.17. Se puede especificar la versión de Hugo con la que se quiere que se genere la web. En mi caso, he generado con la versión 0.19, introduciendo en este apartado <code>hugo_0.19</code>.</li>
+<li>Publish directory: este es el directorio sobre el que se genera la web y se deberá introducir ‘public’.</li>
+</ul>
+<p>Finalmente ya solo queda ir a la página de configuración una vez generada la página y cambiar la url que se crea por defecto por el nombre que se desee, copiar dicha dirección y sustituirla en la línea de código del config.toml.</p>
+<pre class="r"><code>baseURL = &quot;https://mydeeplearning.netlify.com/&quot;</code></pre>
+</div>
+<div id="el-flujo-de-trabajo-y-los-addins" class="section level1">
+<h1>El flujo de trabajo y los Addins</h1>
+<p>El flujo de trabajo son los pasos que se suelen dar a la hora de mantener la web, continuar el desarrollo de un post en el que se está trabajando, asegurarte de que los cambios se producen correctamente y finalmente actualizar los cambios subiéndolos al reposiorio para dejar la página operativa. Los Addins son herramientas que ofrece RStudio para facilitarte este proceso. La interfaz del IDE de RStudio por lo general es muy intuitiva. Los Addins los encontraremos bajo la barra de herramientas, siendo las tres opciones que nos ofrece y que nos interesan para el blog las siguientes:</p>
+<ul>
+<li><strong>New Post</strong>: esta pestaña abrirá un panel en el que podremos rellenar el metadata del post, nos dará a elegir el formato del archivo del post(.md, .Rmd, .Rmarkdown) y creará el documento para comenzar a editarlo y empezar el post.</li>
+<li><strong>Serve Site</strong>: esta pestaña activará LiveReload, muy importante para el flujo de trabajo a la hora de escribir los posts. En esencia, lo que hace es generar la página en un servidor local de nuestro ordenador para la previsualización cada vez que guardamos un cambio en uno de los archivos del proyecto.</li>
+<li><strong>Update Metadata</strong>: esta pestaña abre una panel que nos permite cambiar el metadata de post sobre el que se está trabajando. Personalmente este Addin no lo utilizo porque cambio el metadata directamente en el script de los posts.</li>
+</ul>
+<p>El flujo de trabajo con el que se suele funcionar es el siguiente:</p>
+<ol style="list-style-type: decimal">
+<li>Abres el proyecto de la web en RStudio</li>
+<li>Activas el Addin <strong>Serve Site</strong></li>
+<li>Abres el post sobre el que estás trabajando o creas uno nuevo</li>
+<li>Guardas los cambios las veces necesarias para visualizar el trabajo que has realizado (nunca se utiliza la opción <code>knit</code>). Cada vez que guardas los cambios el LiveReload mostrará el estado actual de la web en el paner Viewer</li>
+<li>Cuando estás satisfecho con el trabajo realizado, vas panel de la interfaz <code>Environment</code> y en la pestaña <code>Git</code> presionamos en <code>Commit</code>. Se seleccionan todos los cambios que se han realizado y los marcamos como <code>Staged</code>, escribimos el comentario de los cambios que hemos realizado y presionamos en <code>Commit</code>. Aparecerá un cuadro de dialogo que muestra el transcurso de las actividades y finalmente el resumen. Por último, presionamos en <code>Push</code> para actualizar los cambios en el repositorio. Esto equivale a los comandos <code>git add/commit/push</code> que habría que haber introducido en el terminal del sistema dentro de la carpeta de la web en nuestro ordenador</li>
+</ol>
+</div>

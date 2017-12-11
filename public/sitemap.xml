@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2017/12/crear-un-blog-con-rstudio-github-y-netlify/</loc>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2017/12/git-push-rejected/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url>
@@ -19,12 +24,18 @@
   
   <url>
     <loc>/tags/blog/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/configuraci%C3%B3n/</loc>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,13 +63,13 @@
   
   <url>
     <loc>/tags/github/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -69,19 +80,19 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

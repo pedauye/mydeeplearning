@@ -23,7 +23,6 @@ paginate = 7
 canonifyurls = true
 footnoteReturnLinkContents = "<sup>^</sup>"
 
-
 [permalinks]
   post = "/:year/:month/:slug/"
 
