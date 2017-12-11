@@ -32,21 +32,21 @@ Por estos motivos, dejo aquí los pasos desde cero que he seguido para subir est
 
 # Lista de contenido
 
-* [Conocimientos básicos antes de empezar](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#conocimientos-basicos-antes-de-empezar)
+* [Conocimientos básicos antes de empezar](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#conocimientos-basicos-antes-de-empezar)
 
-* [Primer paso: Github](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#primer-paso-github)
+* [Primer paso: Github](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#primer-paso-github)
 
-* [Segundo paso: Terminal](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#segundo-paso-terminal)
+* [Segundo paso: Terminal](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#segundo-paso-terminal)
 
-* [Tercer paso: RStudio](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#tercer-paso-rstudio)
+* [Tercer paso: RStudio](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#tercer-paso-rstudio)
 
-* [Cuarto paso: Construir la web](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#cuarto-paso-construir-la-web)
+* [Cuarto paso: Construir la web](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#cuarto-paso-construir-la-web)
 
-* [Quinto paso: Los posts](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#quinto-paso-los-posts)
+* [Quinto paso: Los posts](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#quinto-paso-los-posts)
 
-* [Sexto paso: Netlify](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#sexto-paso-netlify)
+* [Sexto paso: Netlify](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#sexto-paso-netlify)
 
-* [El flujo de trabajo y los Addins](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#el-flujo-de-trabajo-y-los-addins)
+* [El flujo de trabajo y los Addins](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#el-flujo-de-trabajo-y-los-addins)
 
 
 # Conocimientos básicos antes de empezar
@@ -132,7 +132,7 @@ blogdown::new_site(theme = "kakawait/hugo-tranquilpeak-theme")
 # Quinto paso: Los posts
 
 {{% alert danger %}}
-**NOTA**: para este paso hay que tener un poco claro [el flujo de trabajo y los Addins](http://127.0.0.1:4321/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#el-flujo-de-trabajo-y-los-addins)
+**NOTA**: para este paso hay que tener un poco claro [el flujo de trabajo y los Addins](https://mydeeplearning.netlify.com/2017/12/crear-un-blog-con-rstudio-github-y-netlify/#el-flujo-de-trabajo-y-los-addins)
 {{% /alert %}}
 
 Simplemente hay que hacer click en el Addin `New Post` y rellenar los cuadros de diálogo con las características del nuevo post.
