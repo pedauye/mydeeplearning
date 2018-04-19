@@ -1,5 +1,5 @@
 ---
-title: Proyecto de LaTex para TFG
+title: Plantilla de LaTex para TFG
 author: Alberto PedauyÃ© Paredes
 date: '2018-04-16'
 output: html_document
@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 
 LaTex funciona bajo un conjunto de macros de Tex, un lenguaje de 'nivel bajo' en el sentido de que sus acciones últimas son muy elementales. Para trabajar con él se han de instalar las librerías(en el caso de Windows, [Miktex](https://miktex.org/)) y el editor de textos(yo he utilizado [TexStudio](https://www.texstudio.org/)). El empleo de LaTex presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales en la que lo que ves es lo que obtienes. Aquí se introducen instrucciones que han de ser compiladas y que crearán un documento .pdf con el resultado final.
 
-#Proyecto de LaTex
+#Plantilla de LaTex
 
 Aquí se explicarán algunos de los comandos y formas de edición de los textos que se han utilizado para el proyecto y finalmente se adjunta la plantilla completa para la creación de un TFG.
 
