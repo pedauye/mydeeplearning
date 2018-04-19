@@ -29,13 +29,13 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 
 ![](http://res.cloudinary.com/peda/image/upload/v1524124310/1_eGXPKnpl3_hLKNkb9zANxg_brfw0o.png)
 
-[LaTex](https://www.latex-project.org/) es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
+[LaTex](https://www.latex-project.org/) es un editor de textos muy utilizado en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
 
-LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de 'nivel bajo' en el sentido de que sus acciones últimas son muy elementales. Para trabajar con él se han de instalar las librerías(en el caso de Windows, [Miktex](https://miktex.org/)) y el editor de textos(yo he utilizado [TexStudio](https://www.texstudio.org/)). El funcionamiento de LaTex presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales en la que lo que ves es lo que obtienes. Aquí se introducen instrucciones que han de ser compiladas y que crearán un documento .pdf con el resultado final.
+LaTex funciona bajo un conjunto de macros de Tex, un lenguaje de 'nivel bajo' en el sentido de que sus acciones últimas son muy elementales. Para trabajar con él se han de instalar las librerías(en el caso de Windows, [Miktex](https://miktex.org/)) y el editor de textos(yo he utilizado [TexStudio](https://www.texstudio.org/)). El empleo de LaTex presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales en la que lo que ves es lo que obtienes. Aquí se introducen instrucciones que han de ser compiladas y que crearán un documento .pdf con el resultado final.
 
 #Proyecto de LaTex
 
-En esta sección se explicarán algunas de las ediciones de texto que se han utilizado para el proyecto y al final se dejará el documento base completo para la plantilla de TFG.
+Aquí se explicarán algunos de los comandos y formas de edición de los textos que se han utilizado para el proyecto y finalmente se adjunta la plantilla completa para la creación de un TFG.
 
 ##Definición de colores
 
@@ -52,16 +52,16 @@ Se utiliza el paquete `\usepackage{color}` para la definición de colores que po
 \definecolor{portada}{rgb}{0.25, 0, 0}
 ```
 
-El paquete permite la definición de colores específicos a través de los porcentajes [RGB](https://www.w3schools.com/colors/colors_rgb.asp). Por otra parte:
+El paquete permite la definición de colores específicos a través de porcentajes [RGB](https://www.w3schools.com/colors/colors_rgb.asp). Por otra parte, se introducen una serie de características:
 
 * *usenames*: con este comando se indica que se van a utilizar los colores básicos añadidos con el paquete.
 * *dvipsnames*: con este comando se indica que se van a utilizar los colores específicos de _dvips_. Este comando debe ir siempre acompañado del anterior, _usenames_.
 
-La [guía de referencia de colores](https://es.sharelatex.com/learn/Using_colours_in_LaTeX#Reference_guide) muestra nos nombres que toma cada color. Los colores serán introducidos con la función `\color{Blue}`. Los nuevos colores definidos han sido utilizados para: resaltar las palabras del código relevante dentro de los cuadros de código, dar color a los cuadros de código, dar color a la portada.
+La [guía de referencia de colores](https://es.sharelatex.com/learn/Using_colours_in_LaTeX#Reference_guide) muestra los nombres que toma cada color. Los colores serán introducidos con la función `\color{Blue}`. Los nuevos colores definidos han sido utilizados para: resaltar las palabras del código relevante dentro de los cuadros de código, dar color a los cuadros de código, dar color a la portada.
 
 #Cuadros de código
 
-Se utiliza el [paquete](http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf) `usepackage{listings}` para poder introducir cuadros de código del lenguaje de programación deseado. Este paquete también permite la creación de diferentes modelos de cuadros, que en mi caso han sido utilizados para representar el código que en primera instancia se introduce y, por otra parte, para representar los resultados obtenidos del código introducido.
+Se utiliza el [paquete](http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf) `usepackage{listings}` para poder introducir cuadros de código del lenguaje de programación deseado. Este paquete también permite la creación de diferentes modelos de cuadros. En mi caso se han utilizado dos modelos de cuadros personalizados, uno para el código del lenguaje de programación utilizado, y otro para los resultados obtenidos.
 
 ```{r}
 \usepackage{listings}
@@ -128,7 +128,7 @@ Por otra parte, para hacer pequeñas introducciones de código en el propio text
 
 ##Colocación y escalado de imágenes y tablas
 
-A la hora de incluir imágenes y tablas en el documento de LaTex se ha de tener en cuenta que no se hace como en los editores de texto normales. En cambio, se ha de especificar el tamaño y la posición que queremos que ocupe en el texto. Esto se hace a través de la introducción de los parámetros de escala y posición.
+A la hora de incluir imágenes y tablas en el documento de LaTex se ha de tener en cuenta que no se hace como en los editores de texto normales. En cambio, se ha de especificar el tamaño y la posición que se quiere que ocupe en el texto. Esto se hace a través de la introducción de los parámetros de escala y posición.
 
 ```{r}
 \begin{figure}[H]
@@ -139,7 +139,7 @@ A la hora de incluir imágenes y tablas en el documento de LaTex se ha de tener 
 (ejemplo: imagen.jpg) o de no ser así, se deberá especificar la ruta en la que se encuentra
 ```
 
-También es posible redimensionar la imagen a una altura y anchura determinadas. Mediante los parámetros dentro de los corchetes `[width=3cm, height=4cm]` definen el ancho y alto de la imagen.
+También es posible redimensionar la imagen a una altura y anchura determinadas. Mediante los parámetros dentro de los corchetes `[width=3cm, height=4cm]` se definen el ancho y alto de la imagen.
 
 El ambiente `figure` se usa para mostrar las imágenes como elementos flotantes dentro del documento. Para controlar la posición del elemento dentro del documento se utiliza el parámetro entre corchetes `[h]`. Esta es una lista de los posibles valores posicionales.
 

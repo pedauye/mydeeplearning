@@ -29,11 +29,11 @@ keywords:
 <img src="http://res.cloudinary.com/peda/image/upload/v1524124310/1_eGXPKnpl3_hLKNkb9zANxg_brfw0o.png" />
 
 </div>
-<p><a href="https://www.latex-project.org/">LaTex</a> es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.</p>
-<p>LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales. Para trabajar con él se han de instalar las librerías(en el caso de Windows, <a href="https://miktex.org/">Miktex</a>) y el editor de textos(yo he utilizado <a href="https://www.texstudio.org/">TexStudio</a>). El funcionamiento de LaTex presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales en la que lo que ves es lo que obtienes. Aquí se introducen instrucciones que han de ser compiladas y que crearán un documento .pdf con el resultado final.</p>
+<p><a href="https://www.latex-project.org/">LaTex</a> es un editor de textos muy utilizado en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.</p>
+<p>LaTex funciona bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales. Para trabajar con él se han de instalar las librerías(en el caso de Windows, <a href="https://miktex.org/">Miktex</a>) y el editor de textos(yo he utilizado <a href="https://www.texstudio.org/">TexStudio</a>). El empleo de LaTex presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales en la que lo que ves es lo que obtienes. Aquí se introducen instrucciones que han de ser compiladas y que crearán un documento .pdf con el resultado final.</p>
 <div id="proyecto-de-latex" class="section level1">
 <h1>Proyecto de LaTex</h1>
-<p>En esta sección se explicarán algunas de las ediciones de texto que se han utilizado para el proyecto y al final se dejará el documento base completo para la plantilla de TFG.</p>
+<p>Aquí se explicarán algunos de los comandos y formas de edición de los textos que se han utilizado para el proyecto y finalmente se adjunta la plantilla completa para la creación de un TFG.</p>
 <div id="definicion-de-colores" class="section level2">
 <h2>Definición de colores</h2>
 <p>Se utiliza el paquete <code>\usepackage{color}</code> para la definición de colores que posteriormente serán empleados a lo largo del documento. Este paquete provee una lista de comandos para la manipulación de los colores.</p>
@@ -45,17 +45,17 @@ keywords:
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 \definecolor{codegray2}{rgb}{0.95,0.95,0.92}
 \definecolor{portada}{rgb}{0.25, 0, 0}</code></pre>
-<p>El paquete permite la definición de colores específicos a través de los porcentajes <a href="https://www.w3schools.com/colors/colors_rgb.asp">RGB</a>. Por otra parte:</p>
+<p>El paquete permite la definición de colores específicos a través de porcentajes <a href="https://www.w3schools.com/colors/colors_rgb.asp">RGB</a>. Por otra parte, se introducen una serie de características:</p>
 <ul>
 <li><em>usenames</em>: con este comando se indica que se van a utilizar los colores básicos añadidos con el paquete.</li>
 <li><em>dvipsnames</em>: con este comando se indica que se van a utilizar los colores específicos de <em>dvips</em>. Este comando debe ir siempre acompañado del anterior, <em>usenames</em>.</li>
 </ul>
-<p>La <a href="https://es.sharelatex.com/learn/Using_colours_in_LaTeX#Reference_guide">guía de referencia de colores</a> muestra nos nombres que toma cada color. Los colores serán introducidos con la función <code>\color{Blue}</code>. Los nuevos colores definidos han sido utilizados para: resaltar las palabras del código relevante dentro de los cuadros de código, dar color a los cuadros de código, dar color a la portada.</p>
+<p>La <a href="https://es.sharelatex.com/learn/Using_colours_in_LaTeX#Reference_guide">guía de referencia de colores</a> muestra los nombres que toma cada color. Los colores serán introducidos con la función <code>\color{Blue}</code>. Los nuevos colores definidos han sido utilizados para: resaltar las palabras del código relevante dentro de los cuadros de código, dar color a los cuadros de código, dar color a la portada.</p>
 </div>
 </div>
 <div id="cuadros-de-codigo" class="section level1">
 <h1>Cuadros de código</h1>
-<p>Se utiliza el <a href="http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf">paquete</a> <code>usepackage{listings}</code> para poder introducir cuadros de código del lenguaje de programación deseado. Este paquete también permite la creación de diferentes modelos de cuadros, que en mi caso han sido utilizados para representar el código que en primera instancia se introduce y, por otra parte, para representar los resultados obtenidos del código introducido.</p>
+<p>Se utiliza el <a href="http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf">paquete</a> <code>usepackage{listings}</code> para poder introducir cuadros de código del lenguaje de programación deseado. Este paquete también permite la creación de diferentes modelos de cuadros. En mi caso se han utilizado dos modelos de cuadros personalizados, uno para el código del lenguaje de programación utilizado, y otro para los resultados obtenidos.</p>
 <pre class="r"><code>\usepackage{listings}
 
 \lstdefinestyle{resultado}{
@@ -115,14 +115,14 @@ keywords:
 <p>Por otra parte, para hacer pequeñas introducciones de código en el propio texto, sin necesidad de crear un cuadro entero, se utiliza el siguiente comando: <code>\colorbox{codegray2}{\lstinline|Texto que se quiere incluir|}</code>.</p>
 <div id="colocacion-y-escalado-de-imagenes-y-tablas" class="section level2">
 <h2>Colocación y escalado de imágenes y tablas</h2>
-<p>A la hora de incluir imágenes y tablas en el documento de LaTex se ha de tener en cuenta que no se hace como en los editores de texto normales. En cambio, se ha de especificar el tamaño y la posición que queremos que ocupe en el texto. Esto se hace a través de la introducción de los parámetros de escala y posición.</p>
+<p>A la hora de incluir imágenes y tablas en el documento de LaTex se ha de tener en cuenta que no se hace como en los editores de texto normales. En cambio, se ha de especificar el tamaño y la posición que se quiere que ocupe en el texto. Esto se hace a través de la introducción de los parámetros de escala y posición.</p>
 <pre class="r"><code>\begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{Rplot}
     \caption{Diagrama de los valores de correlación entre las variables}
 \end{figure} #NOTA: la imagen deberá estar en la misma carpeta del proyecto
 (ejemplo: imagen.jpg) o de no ser así, se deberá especificar la ruta en la que se encuentra</code></pre>
-<p>También es posible redimensionar la imagen a una altura y anchura determinadas. Mediante los parámetros dentro de los corchetes <code>[width=3cm, height=4cm]</code> definen el ancho y alto de la imagen.</p>
+<p>También es posible redimensionar la imagen a una altura y anchura determinadas. Mediante los parámetros dentro de los corchetes <code>[width=3cm, height=4cm]</code> se definen el ancho y alto de la imagen.</p>
 <p>El ambiente <code>figure</code> se usa para mostrar las imágenes como elementos flotantes dentro del documento. Para controlar la posición del elemento dentro del documento se utiliza el parámetro entre corchetes <code>[h]</code>. Esta es una lista de los posibles valores posicionales.</p>
 <table>
 <colgroup>
