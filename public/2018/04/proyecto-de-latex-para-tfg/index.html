@@ -1,0 +1,975 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.31 with theme Tranquilpeak 0.4.3-BETA">
+    <title>Proyecto de LaTex para TFG</title>
+    <meta name="author" content="Alberto Pedauyé Paredes">
+    <meta name="keywords" content="blog, de cero, Latex, proyecto, TFG, trabajo de fin de grado, post, web, como hacer un tfg con latex, latex para tfg, latex trabajo de fin de grado">
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+    <meta name="description" content="LaTex es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
+LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales.">
+    <meta property="og:description" content="LaTex es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
+LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Proyecto de LaTex para TFG">
+    <meta property="og:url" content="/2018/04/proyecto-de-latex-para-tfg/">
+    <meta property="og:site_name" content="My Deep Learning">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="My Deep Learning">
+    <meta name="twitter:description" content="LaTex es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
+LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales.">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="https://res.cloudinary.com/peda/image/upload/c_scale,w_949/v1512211848/tama%C3%B1ocarnet_dbsm90.png">
+    
+
+    
+      <meta property="og:image" content="http://res.cloudinary.com/peda/image/upload/v1524124384/latex_tsd047.png">
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
+    
+    
+
+    
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-110461966-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">My Deep Learning</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://res.cloudinary.com/peda/image/upload/c_scale,w_949/v1512211848/tama%C3%B1ocarnet_dbsm90.png" alt="Foto de autor" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about">
+          <img class="sidebar-profile-picture" src="https://res.cloudinary.com/peda/image/upload/c_scale,w_949/v1512211848/tama%C3%B1ocarnet_dbsm90.png" alt="Foto de autor" />
+        </a>
+        <h4 class="sidebar-profile-name">Alberto Pedauyé Paredes</h4>
+        
+          <h5 class="sidebar-profile-bio">Si internet sabe hacerlo <strong>¡yo también!</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Inicio</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Etiquetas</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archivos</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/page/contacto/index.html">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">CV</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/pedauye">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/mailto:alpedauye@hotmail.com">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-paper-plane"></i>
+      
+      <span class="sidebar-button-desc">Hotmail</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Proyecto de LaTex para TFG
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-04-16T00:00:00Z">
+        
+  
+  
+  
+  
+    16 Abril 2018
+  
+
+      </time>
+    
+    
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <div class="figure">
+<img src="http://res.cloudinary.com/peda/image/upload/v1524124310/1_eGXPKnpl3_hLKNkb9zANxg_brfw0o.png" />
+
+</div>
+<p><a href="https://www.latex-project.org/">LaTex</a> es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.</p>
+<p>LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales. Para trabajar con él se han de instalar las librerías(en el caso de Windows, <a href="https://miktex.org/">Miktex</a>) y el editor de textos(yo he utilizado <a href="https://www.texstudio.org/">TexStudio</a>). El funcionamiento de LaTex presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales en la que lo que ves es lo que obtienes. Aquí se introducen instrucciones que han de ser compiladas y que crearán un documento .pdf con el resultado final.</p>
+<div id="proyecto-de-latex" class="section level1">
+<h1>Proyecto de LaTex</h1>
+<p>En esta sección se explicarán algunas de las ediciones de texto que se han utilizado para el proyecto y al final se dejará el documento base completo para la plantilla de TFG.</p>
+<div id="definicion-de-colores" class="section level2">
+<h2>Definición de colores</h2>
+<p>Se utiliza el paquete <code>\usepackage{color}</code> para la definición de colores que posteriormente serán empleados a lo largo del documento. Este paquete provee una lista de comandos para la manipulación de los colores.</p>
+<pre class="r"><code>\usepackage[usenames, dvipsnames]{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegray2}{rgb}{0.95,0.95,0.92}
+\definecolor{portada}{rgb}{0.25, 0, 0}</code></pre>
+<p>El paquete permite la definición de colores específicos a través de los porcentajes <a href="https://www.w3schools.com/colors/colors_rgb.asp">RGB</a>. Por otra parte:</p>
+<ul>
+<li><em>usenames</em>: con este comando se indica que se van a utilizar los colores básicos añadidos con el paquete.</li>
+<li><em>dvipsnames</em>: con este comando se indica que se van a utilizar los colores específicos de <em>dvips</em>. Este comando debe ir siempre acompañado del anterior, <em>usenames</em>.</li>
+</ul>
+<p>La <a href="https://es.sharelatex.com/learn/Using_colours_in_LaTeX#Reference_guide">guía de referencia de colores</a> muestra nos nombres que toma cada color. Los colores serán introducidos con la función <code>\color{Blue}</code>. Los nuevos colores definidos han sido utilizados para: resaltar las palabras del código relevante dentro de los cuadros de código, dar color a los cuadros de código, dar color a la portada.</p>
+</div>
+</div>
+<div id="cuadros-de-codigo" class="section level1">
+<h1>Cuadros de código</h1>
+<p>Se utiliza el <a href="http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf">paquete</a> <code>usepackage{listings}</code> para poder introducir cuadros de código del lenguaje de programación deseado. Este paquete también permite la creación de diferentes modelos de cuadros, que en mi caso han sido utilizados para representar el código que en primera instancia se introduce y, por otra parte, para representar los resultados obtenidos del código introducido.</p>
+<pre class="r"><code>\usepackage{listings}
+
+\lstdefinestyle{resultado}{
+    language=R,
+    backgroundcolor=\color{white},   
+    commentstyle=\color{codegreen},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,    
+    frame=single,                   
+    keepspaces=true,                 
+    numbers=left,   
+    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstdefinestyle{codigo}{
+    language=R,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,    
+    frame=single,                   
+    keepspaces=true,                 
+    numbers=left,   
+    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}</code></pre>
+<p>De esta forma se definen los cuadros para código y para resultados. De las características principales especificadas en la definición de los cuadros, es de mencionar:</p>
+<ul>
+<li>Con <code>\lstdefinestyle{resultado}</code> se define el cuadro de código y además se nombra. Este nombre será utilizado para diferenciar entre uno y otro. Durante la redacción del texto se hará una llamada a los cuadros de código mediante el nombre definido para ello tal que así:</li>
+</ul>
+<pre class="r"><code>\begin{lstlisting} [caption= Título del código que se va representar, label= Número para futuras referencias al código, style = resultado]
+
+    #Código que se va a reprensetar
+
+\end{lstlisting}</code></pre>
+<ul>
+<li><code>lenguaje =</code>: con esta característica se define cual es el lenguaje de programación que se va a escribir dentro de los cuadros de código. El propio paquete de <code>listings</code> tiene incluidos lenguajes de programación usuales de forma que al ser introducidos en LaTex, ya se conoce la estructura que pueden tener y cuáles son las funciones y palabras relevantes de estos.</li>
+<li>El resto de características hacen posible la personalización de los cuadros de código. Estas características vienen explicadas en las diferentes bibliografías y posts que se pueden encontrar por <a href="https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings">internet</a>.</li>
+</ul>
+<p>Por otra parte, para hacer pequeñas introducciones de código en el propio texto, sin necesidad de crear un cuadro entero, se utiliza el siguiente comando: <code>\colorbox{codegray2}{\lstinline|Texto que se quiere incluir|}</code>.</p>
+<div id="colocacion-y-escalado-de-imagenes-y-tablas" class="section level2">
+<h2>Colocación y escalado de imágenes y tablas</h2>
+<p>A la hora de incluir imágenes y tablas en el documento de LaTex se ha de tener en cuenta que no se hace como en los editores de texto normales. En cambio, se ha de especificar el tamaño y la posición que queremos que ocupe en el texto. Esto se hace a través de la introducción de los parámetros de escala y posición.</p>
+<pre class="r"><code>\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{Rplot}
+    \caption{Diagrama de los valores de correlación entre las variables}
+\end{figure} #NOTA: la imagen deberá estar en la misma carpeta del proyecto
+(ejemplo: imagen.jpg) o de no ser así, se deberá especificar la ruta en la que se encuentra</code></pre>
+<p>También es posible redimensionar la imagen a una altura y anchura determinadas. Mediante los parámetros dentro de los corchetes <code>[width=3cm, height=4cm]</code> definen el ancho y alto de la imagen.</p>
+<p>El ambiente <code>figure</code> se usa para mostrar las imágenes como elementos flotantes dentro del documento. Para controlar la posición del elemento dentro del documento se utiliza el parámetro entre corchetes <code>[h]</code>. Esta es una lista de los posibles valores posicionales.</p>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="84%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parámetro</th>
+<th>Posición</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>h</td>
+<td>Establece la posición del elemento flotante ‘aquí’. Es decir, aproximadamente en el mismo punto donde aparece en el código.</td>
+</tr>
+<tr class="even">
+<td>t</td>
+<td>Inserta la figura en el inicio de la página.</td>
+</tr>
+<tr class="odd">
+<td>b</td>
+<td>Inserta la figura al final de la página.</td>
+</tr>
+<tr class="even">
+<td>p</td>
+<td>Inserta las figuras en una página por separado, que solo contiene figuras.</td>
+</tr>
+<tr class="odd">
+<td>!</td>
+<td>Sobreescribe los parámetros que LaTex usa para determinas una ‘buena’ posición para la imagen.</td>
+</tr>
+<tr class="even">
+<td>H</td>
+<td>Establece la figura justo en el mismo lugar en el que aparece en el código, se requiere importar el paquete ‘float’.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="introduccion-de-funciones-matematicas" class="section level2">
+<h2>Introducción de funciones matemáticas</h2>
+<p>Para la introducción de funciones matemáticas se utiliza el paquete <code>\usepackage{amsmath}</code> y el símbolo <em>$</em>. Sin embargo, hay situaciones en las que la función requiere de necesidades especiales. En este caso la función es más larga que el ancho de la página y se necesita que se ajuste a los márgenes. Utilizamos <code>\begin{equation*}</code> para este caso.</p>
+<pre class="r"><code>\begin{equation*}
+{\small 
+    \begin{split}
+        &amp;Casualty\_Severity = Vehicle\_Type + Vehicle\_Manoeuvre + Junction\_Location\\&amp; +
+        Skidding\_and\_Overturning + Hit\_Object\_off\_Carriageway\\&amp; + First\_Point\_of\_Impact + Journey\_Purpose\_of\_Driver\\&amp; + Sex\_of\_Driver + Age\_Band\_of\_Driver + 
+        Engine\_Capacity\_.CC.\\&amp; + Propulsion\_Code + Age\_of\_Vehicle + Driver\_Home\_Area\_Type\\&amp; + make + Casualty\_Class + Sex\_of\_Casualty + Age\_Band\_of\_Casualty\\&amp; + Car\_Passenger + Casualty\_Type + Number\_of\_Vehicles + Day\_of\_Week\\&amp; + Hour\_of\_Day + First\_Road\_Class + Road\_Type + Speed\_limit\\&amp; + Junction\_Detail + Light\_Conditions + Weather\_Conditions\\&amp; +Road\_Surface\_Conditions + Urban\_or\_Rural\_Area\\&amp; + month + other\_vehic
+    \end{split}}
+\end{equation*}</code></pre>
+<p>Esto especifica que la función será divisible, que las divisiones se harán cada <code>\\</code> y que el centrado de la función estará donde el símbolo <code>&amp;</code> se encuentre en cada división. El asterisco <code>*</code> indica que no se quiere que se numere la ecuación.</p>
+</div>
+<div id="plantilla-de-tfg" class="section level2">
+<h2>Plantilla de TFG</h2>
+<p>Por lo que respecta al resto de características que se utilizan en esta plantilla, son explicadas en el interior, junto a cada uno de los comandos, mediante pequeños comentarios.</p>
+<pre class="r"><code>\documentclass[12pt,a4paper]{book}
+
+\usepackage[utf8]{inputenc} #paquete para la codificación de entrada
+\usepackage[spanish]{babel} #paquete para especificar el idioma de escritura
+\usepackage{amsmath}
+\usepackage[usenames, dvipsnames]{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegray2}{rgb}{0.95,0.95,0.92}
+\definecolor{portada}{rgb}{0.25, 0, 0}
+
+\usepackage{amsfonts} #paquete para la introducción de fuentes
+\usepackage{amssymb} #paquete para la introducción de símbolos
+\usepackage{multirow} #paquete para multicolumnas
+\usepackage{graphicx} #paquete para la introducción de gráficos
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=3cm]{geometry} #paquete para especificar la geometría del documento
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref} #paquete para la introducción de hipervínculos
+\usepackage[export]{adjustbox} #paquete para el ajusto de elementos
+\usepackage{fancyhdr} #paquete que define estilos
+\usepackage{fancyref} #paquete que define estilos
+\usepackage{setspace} #paquete para la edición de texto
+\usepackage{float} #paquete para la edición de texto
+\usepackage{listings}
+
+\lstdefinestyle{resultado}{
+    language=R,
+    backgroundcolor=\color{white},   
+    commentstyle=\color{codegreen},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,    
+    frame=single,                   
+    keepspaces=true,                 
+    numbers=left,   
+    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstdefinestyle{codigo}{
+    language=R,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\scriptsize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,    
+    frame=single,                   
+    keepspaces=true,                 
+    numbers=left,   
+    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\usepackage{cite} #paquete para la inclusión de citas
+\usepackage{setspace} #paquete para la edición de textos
+\usepackage{lastpage} #paquete para la edición de textos
+\usepackage{eurosym} #paquete para la edición de textos
+
+\newcommand{\myref}[1]{\color{blue}\bf(\ref{#1})}
+\usepackage{afterpage}
+\setlength{\headheight}{38pt} 
+\setlength{\parskip}{\baselineskip} 
+\spacing{1.15}
+  
+\author{Alberto Pedauyé Paredes}
+  
+\begin{document}
+
+    
+    \pagestyle{empty}
+    \pagecolor{portada}
+    \begin{titlepage}
+        \centering
+        \color{yellow}
+        \begin{Huge}
+            UNIVERSIDAD
+        \end{Huge} \\
+    \vspace{0.5cm}
+    \color{yellow}
+        \begin{large}
+            ESCUELA POLITÉCNICA
+        \end{large}\\
+    \vspace{0.5cm}
+    \color{yellow}
+        \begin{large}
+            GRADO
+        \end{large}\\
+    \vspace{0.5cm}
+        \includegraphics[scale=0.8]{}
+        \vspace{1cm}
+        \begin{center}
+            \begin{Huge}
+                \color{yellow}
+                \textsc{Título}
+                
+                \vspace{0.5cm}
+                
+                \textsc{}
+                
+            \end{Huge}
+            
+            
+            \color{yellow}
+            \textsc{TRABAJO DE FIN DE GRADO} \\
+            \color{yellow}
+            \text{Fecha}
+        \end{center}
+        \vspace{1cm}
+        %\raggedright{\textsc{Alberto Pedauyé Paredes}}
+        \color{yellow}
+        \raggedleft{\textsc{AUTOR: Alberto Pedauyé Paredes \\ DIRECTOR: }}
+    
+        \begin{huge}
+        
+        \end{huge}
+    \end{titlepage}
+
+    \nopagecolor
+    \pagestyle{empty}
+    \tableofcontents #tabla de contenidos
+    \newpage
+    \pagestyle{empty}
+    \lstlistoflistings #tabla de cuados de código
+    \newpage
+    \pagebreak
+    \listoftables #tabla de figuras
+    \newpage
+    \pagestyle{empty}
+    
+
+\chapter{INTRODUCCIÓN}
+
+\pagestyle{fancy} #estilo
+\lhead{Memoria.} #texto izquierda de la cabecera
+\chead{} #texto centro de la cabecera
+\rhead{\includegraphics[scale=0.25]{}}
+
+\cfoot{\thepage}
+\rfoot{Alberto Pedauyé Paredes}
+\renewcommand{\footrulewidth}{0.5pt}
+\setcounter{page}{11}
+\large
+            
+\section{Sección 1}
+            \subsection{Subsección 1.1}
+            ...
+            
+\bibliographystyle{unsrt}
+\bibliography{biblio}
+
+\cleardoublepage
+
+
+\end{document}</code></pre>
+</div>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">ETIQUETADO EN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/blog/">blog</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/configuraci%C3%B3n/">Configuración</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/latex/">Latex</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">SIGUIENTE</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/crear-un-blog-con-rstudio-github-y-netlify/" data-tooltip="Crear un blog con RStudio, Github y Netlify">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">ANTERIOR</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2018 Alberto Pedauyé Paredes. Todos los derechos reservados
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">SIGUIENTE</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2017/12/crear-un-blog-con-rstudio-github-y-netlify/" data-tooltip="Crear un blog con RStudio, Github y Netlify">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">ANTERIOR</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=/2018/04/proyecto-de-latex-para-tfg/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2F2018%2F04%2Fproyecto-de-latex-para-tfg%2F">
+          <i class="fa fa-facebook-official"></i><span>Compartir en Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2F2018%2F04%2Fproyecto-de-latex-para-tfg%2F">
+          <i class="fa fa-twitter"></i><span>Compartir en Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2F2018%2F04%2Fproyecto-de-latex-para-tfg%2F">
+          <i class="fa fa-google-plus"></i><span>Compartir en Google&#43;</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2F2018%2F04%2Fproyecto-de-latex-para-tfg%2F">
+          <i class="fa fa-linkedin"></i><span>Compartir en Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://res.cloudinary.com/peda/image/upload/c_scale,w_949/v1512211848/tama%C3%B1ocarnet_dbsm90.png" alt="Foto de autor" />
+    
+    <h4 id="about-card-name">Alberto Pedauyé Paredes</h4>
+    
+      <div id="about-card-bio">Si internet sabe hacerlo <strong>¡yo también!</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Ingeniero Mecánico
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        España
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Buscar" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no se encontraron artículos</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/04/proyecto-de-latex-para-tfg/">
+                <h3 class="media-heading">Proyecto de LaTex para TFG</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">LaTex es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
+LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2017/12/crear-un-blog-con-rstudio-github-y-netlify/">
+                <h3 class="media-heading">Crear un blog con RStudio, Github y Netlify</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2017/12/git-push-rejected/">
+                <h3 class="media-heading">Git push rejected</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Después de haber estado trabajando en uno de los post y estar satisfecho con los resultados que se muestran en el servidor local de R, me dispongo a actualizar los archivos y subirlos al repositorio de Github para que Netlify los coja y muestre las actualizaciones de la web. Para ello, sigo los pasos de costumbre:
+Click en la pestaña de CommitMarco todos los cambios realizados y los selecciono como StagedEscribo el comentario para el commit en el que describo los nuevos cambiosSubo los cambios con git pushSin embargo, esta vez en vez de obtener un resultados satisfactorio subiendo los archivos, en la pequeña consola que muestra R Studio a la hora de realizar las acciones en Git se imprime el siguiente resultado.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2017/11/mi-primer-post/">
+                <h3 class="media-heading">Mi primer post</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Nov 11, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Primero de todo quiero darte las gracias por visitar mi blog. Quiero que sepas es que este blog, en parte, es más para mi que para ti puesto que su misión principal es que aprenda nuevas habilidades y que pueda recordar aquellas que tengo oxidadas. Por tanto los artículos de este blog van a ser procedimentales y personales, escritos para mí. Sin embargo, la razón por la que subo este contenido a internet (además de para aprender a cómo hacerlo), es para que sirva a aquellos que lo lean a ahorrar tiempo en aprender sobre las cosas de las que hablo, o simplemente a ver la forma de hacerlo que a mi me ha funcionado.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no se encontraron artículos"
+         data-message-one="1 artículo encontrado"
+         data-message-other="{n} artículos encontrados">
+         4 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('http://res.cloudinary.com/peda/image/upload/v1512463843/sea-2985359_1280_ffyhrn.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/2018\/04\/proyecto-de-latex-para-tfg\/';
+          
+            this.page.identifier = '\/2018\/04\/proyecto-de-latex-para-tfg\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+    
+  </body>
+</html>
+

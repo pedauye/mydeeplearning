@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Configuración on My Deep Learning</title>
-    <link>/tags/configuraci%C3%B3n/</link>
-    <description>Recent content in Configuración on My Deep Learning</description>
+    <title>Latex on My Deep Learning</title>
+    <link>/tags/latex/</link>
+    <description>Recent content in Latex on My Deep Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
     <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
     <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/configuraci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
       <guid>/2018/04/proyecto-de-latex-para-tfg/</guid>
       <description>LaTex es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
 LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de ‘nivel bajo’ en el sentido de que sus acciones últimas son muy elementales.</description>
-    </item>
-    
-    <item>
-      <title>Crear un blog con RStudio, Github y Netlify</title>
-      <link>/2017/12/crear-un-blog-con-rstudio-github-y-netlify/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
-      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
-      <guid>/2017/12/crear-un-blog-con-rstudio-github-y-netlify/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -8,7 +8,7 @@
     <language>en-us</language>
     <managingEditor>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</managingEditor>
     <webMaster>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</webMaster>
-    <lastBuildDate>Mon, 11 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
     <item>
       <title>Blog</title>
       <link>/tags/blog/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/tags/blog/</guid>
       <description></description>
@@ -25,7 +25,7 @@
     <item>
       <title>Configuración</title>
       <link>/tags/configuraci%C3%B3n/</link>
-      <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/tags/configuraci%C3%B3n/</guid>
       <description></description>
@@ -64,6 +64,15 @@
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
       <guid>/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latex</title>
+      <link>/tags/latex/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <author>alpedauye@hotmail.com (Alberto Pedauyé Paredes)</author>
+      <guid>/tags/latex/</guid>
       <description></description>
     </item>
     

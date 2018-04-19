@@ -1,0 +1,354 @@
+---
+title: Proyecto de LaTex para TFG
+author: Alberto PedauyÃ© Paredes
+date: '2018-04-16'
+output: html_document
+thumbnailImagePosition: "left"
+thumbnailImage: http://res.cloudinary.com/peda/image/upload/v1524124384/latex_tsd047.png
+tags:
+  - blog
+  - Configuración
+  - Latex
+keywords:
+  - blog
+  - de cero
+  - Latex
+  - proyecto
+  - TFG
+  - trabajo de fin de grado
+  - post
+  - web
+  - como hacer un tfg con latex
+  - latex para tfg
+  - latex trabajo de fin de grado
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```
+
+![](http://res.cloudinary.com/peda/image/upload/v1524124310/1_eGXPKnpl3_hLKNkb9zANxg_brfw0o.png)
+
+[LaTex](https://www.latex-project.org/) es un editor de textos muy utilizados en los ámbitos científicos y académicos. Esto es debido a que los documentos que crea tienen una gran calidad tipográfica además de la variedad de posibilidades que ofrece, la mayoría de ellas enfocadas a facilitar la redacción de artículos científico-técnicos.
+
+LaTex trabaja bajo un conjunto de macros de Tex, un lenguaje de 'nivel bajo' en el sentido de que sus acciones últimas son muy elementales. Para trabajar con él se han de instalar las librerías(en el caso de Windows, [Miktex](https://miktex.org/)) y el editor de textos(yo he utilizado [TexStudio](https://www.texstudio.org/)). El funcionamiento de LaTex presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales en la que lo que ves es lo que obtienes. Aquí se introducen instrucciones que han de ser compiladas y que crearán un documento .pdf con el resultado final.
+
+#Proyecto de LaTex
+
+En esta sección se explicarán algunas de las ediciones de texto que se han utilizado para el proyecto y al final se dejará el documento base completo para la plantilla de TFG.
+
+##Definición de colores
+
+Se utiliza el paquete `\usepackage{color}` para la definición de colores que posteriormente serán empleados a lo largo del documento. Este paquete provee una lista de comandos para la manipulación de los colores.
+
+```{r}
+\usepackage[usenames, dvipsnames]{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegray2}{rgb}{0.95,0.95,0.92}
+\definecolor{portada}{rgb}{0.25, 0, 0}
+```
+
+El paquete permite la definición de colores específicos a través de los porcentajes [RGB](https://www.w3schools.com/colors/colors_rgb.asp). Por otra parte:
+
+* *usenames*: con este comando se indica que se van a utilizar los colores básicos añadidos con el paquete.
+* *dvipsnames*: con este comando se indica que se van a utilizar los colores específicos de _dvips_. Este comando debe ir siempre acompañado del anterior, _usenames_.
+
+La [guía de referencia de colores](https://es.sharelatex.com/learn/Using_colours_in_LaTeX#Reference_guide) muestra nos nombres que toma cada color. Los colores serán introducidos con la función `\color{Blue}`. Los nuevos colores definidos han sido utilizados para: resaltar las palabras del código relevante dentro de los cuadros de código, dar color a los cuadros de código, dar color a la portada.
+
+#Cuadros de código
+
+Se utiliza el [paquete](http://texdoc.net/texmf-dist/doc/latex/listings/listings.pdf) `usepackage{listings}` para poder introducir cuadros de código del lenguaje de programación deseado. Este paquete también permite la creación de diferentes modelos de cuadros, que en mi caso han sido utilizados para representar el código que en primera instancia se introduce y, por otra parte, para representar los resultados obtenidos del código introducido.
+
+```{r}
+\usepackage{listings}
+
+\lstdefinestyle{resultado}{
+	language=R,
+	backgroundcolor=\color{white},   
+	commentstyle=\color{codegreen},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\scriptsize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,    
+	frame=single,	                
+	keepspaces=true,                 
+	numbers=left,   
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstdefinestyle{codigo}{
+	language=R,
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\scriptsize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,    
+	frame=single,	                
+	keepspaces=true,                 
+	numbers=left,   
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+```
+
+De esta forma se definen los cuadros para código y para resultados. De las características principales especificadas en la definición de los cuadros, es de mencionar:
+
+* Con `\lstdefinestyle{resultado}` se define el cuadro de código y además se nombra. Este nombre será utilizado para diferenciar entre uno y otro. Durante la redacción del texto se hará una llamada a los cuadros de código mediante el nombre definido para ello tal que así:
+
+```{r}
+\begin{lstlisting} [caption= Título del código que se va representar, label= Número para futuras referencias al código, style = resultado]
+
+	#Código que se va a reprensetar
+
+\end{lstlisting}
+```
+
+* `lenguaje =`: con esta característica se define cual es el lenguaje de programación que se va a escribir dentro de los cuadros de código. El propio paquete de `listings` tiene incluidos lenguajes de programación usuales de forma que al ser introducidos en LaTex, ya se conoce la estructura que pueden tener y cuáles son las funciones y palabras relevantes de estos.
+* El resto de características hacen posible la personalización de los cuadros de código. Estas características vienen explicadas en las diferentes bibliografías y posts que se pueden encontrar por [internet](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings).
+
+Por otra parte, para hacer pequeñas introducciones de código en el propio texto, sin necesidad de crear un cuadro entero, se utiliza el siguiente comando: `\colorbox{codegray2}{\lstinline|Texto que se quiere incluir|}`.
+
+##Colocación y escalado de imágenes y tablas
+
+A la hora de incluir imágenes y tablas en el documento de LaTex se ha de tener en cuenta que no se hace como en los editores de texto normales. En cambio, se ha de especificar el tamaño y la posición que queremos que ocupe en el texto. Esto se hace a través de la introducción de los parámetros de escala y posición.
+
+```{r}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{Rplot}
+	\caption{Diagrama de los valores de correlación entre las variables}
+\end{figure} #NOTA: la imagen deberá estar en la misma carpeta del proyecto
+(ejemplo: imagen.jpg) o de no ser así, se deberá especificar la ruta en la que se encuentra
+```
+
+También es posible redimensionar la imagen a una altura y anchura determinadas. Mediante los parámetros dentro de los corchetes `[width=3cm, height=4cm]` definen el ancho y alto de la imagen.
+
+El ambiente `figure` se usa para mostrar las imágenes como elementos flotantes dentro del documento. Para controlar la posición del elemento dentro del documento se utiliza el parámetro entre corchetes `[h]`. Esta es una lista de los posibles valores posicionales.
+
+```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis', eval=T}
+tabl <- "
+| Parámetro        | Posición           |
+|---------------|----------------------------------------------------------------------------------------|
+| h      | Establece la posición del elemento flotante 'aquí'. Es decir, aproximadamente en el mismo punto donde aparece en el código. |
+| t      | Inserta la figura en el inicio de la página.      |
+| b | Inserta la figura al final de la página.      |
+| p | Inserta las figuras en una página por separado, que solo contiene figuras.      |
+| ! | Sobreescribe los parámetros que LaTex usa para determinas una 'buena' posición para la imagen.      |
+| H | Establece la figura justo en el mismo lugar en el que aparece en el código, se requiere importar el paquete 'float'.      |
+"
+cat(tabl) # output the table in a format good for HTML/PDF/docx conversion
+```
+
+##Introducción de funciones matemáticas
+
+Para la introducción de funciones matemáticas se utiliza el paquete `\usepackage{amsmath}` y el símbolo *$*. Sin embargo, hay situaciones en las que la función requiere de necesidades especiales. En este caso la función es más larga que el ancho de la página y se necesita que se ajuste a los márgenes. Utilizamos `\begin{equation*}` para este caso.
+
+```{r}
+\begin{equation*}
+{\small 
+	\begin{split}
+		&Casualty\_Severity = Vehicle\_Type + Vehicle\_Manoeuvre + Junction\_Location\\& +
+		Skidding\_and\_Overturning + Hit\_Object\_off\_Carriageway\\& + First\_Point\_of\_Impact + Journey\_Purpose\_of\_Driver\\& + Sex\_of\_Driver + Age\_Band\_of\_Driver + 
+		Engine\_Capacity\_.CC.\\& + Propulsion\_Code + Age\_of\_Vehicle + Driver\_Home\_Area\_Type\\& + make + Casualty\_Class + Sex\_of\_Casualty + Age\_Band\_of\_Casualty\\& + Car\_Passenger + Casualty\_Type + Number\_of\_Vehicles + Day\_of\_Week\\& + Hour\_of\_Day + First\_Road\_Class + Road\_Type + Speed\_limit\\& + Junction\_Detail + Light\_Conditions + Weather\_Conditions\\& +Road\_Surface\_Conditions + Urban\_or\_Rural\_Area\\& + month + other\_vehic
+	\end{split}}
+\end{equation*}
+```
+
+Esto especifica que la función será divisible, que las divisiones se harán cada `\\` y que el centrado de la función estará donde el símbolo `&` se encuentre en cada división. El asterisco `*` indica que no se quiere que se numere la ecuación.
+
+##Plantilla de TFG
+
+Por lo que respecta al resto de características que se utilizan en esta plantilla, son explicadas en el interior, junto a cada uno de los comandos, mediante pequeños comentarios.
+
+
+```{r}
+\documentclass[12pt,a4paper]{book}
+
+\usepackage[utf8]{inputenc} #paquete para la codificación de entrada
+\usepackage[spanish]{babel} #paquete para especificar el idioma de escritura
+\usepackage{amsmath}
+\usepackage[usenames, dvipsnames]{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegray2}{rgb}{0.95,0.95,0.92}
+\definecolor{portada}{rgb}{0.25, 0, 0}
+
+\usepackage{amsfonts} #paquete para la introducción de fuentes
+\usepackage{amssymb} #paquete para la introducción de símbolos
+\usepackage{multirow} #paquete para multicolumnas
+\usepackage{graphicx} #paquete para la introducción de gráficos
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=3cm]{geometry} #paquete para especificar la geometría del documento
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref} #paquete para la introducción de hipervínculos
+\usepackage[export]{adjustbox} #paquete para el ajusto de elementos
+\usepackage{fancyhdr} #paquete que define estilos
+\usepackage{fancyref} #paquete que define estilos
+\usepackage{setspace} #paquete para la edición de texto
+\usepackage{float} #paquete para la edición de texto
+\usepackage{listings}
+
+\lstdefinestyle{resultado}{
+	language=R,
+	backgroundcolor=\color{white},   
+	commentstyle=\color{codegreen},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\scriptsize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,    
+	frame=single,	                
+	keepspaces=true,                 
+	numbers=left,   
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstdefinestyle{codigo}{
+	language=R,
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\scriptsize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,    
+	frame=single,	                
+	keepspaces=true,                 
+	numbers=left,   
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\usepackage{cite} #paquete para la inclusión de citas
+\usepackage{setspace} #paquete para la edición de textos
+\usepackage{lastpage} #paquete para la edición de textos
+\usepackage{eurosym} #paquete para la edición de textos
+
+\newcommand{\myref}[1]{\color{blue}\bf(\ref{#1})}
+\usepackage{afterpage}
+\setlength{\headheight}{38pt} 
+\setlength{\parskip}{\baselineskip} 
+\spacing{1.15}
+  
+\author{Alberto Pedauyé Paredes}
+  
+\begin{document}
+
+	
+	\pagestyle{empty}
+	\pagecolor{portada}
+	\begin{titlepage}
+		\centering
+		\color{yellow}
+		\begin{Huge}
+			UNIVERSIDAD
+		\end{Huge} \\
+	\vspace{0.5cm}
+	\color{yellow}
+		\begin{large}
+			ESCUELA POLITÉCNICA
+		\end{large}\\
+	\vspace{0.5cm}
+	\color{yellow}
+		\begin{large}
+			GRADO
+		\end{large}\\
+	\vspace{0.5cm}
+		\includegraphics[scale=0.8]{}
+		\vspace{1cm}
+		\begin{center}
+			\begin{Huge}
+				\color{yellow}
+				\textsc{Título}
+				
+				\vspace{0.5cm}
+				
+				\textsc{}
+				
+			\end{Huge}
+			
+			
+			\color{yellow}
+			\textsc{TRABAJO DE FIN DE GRADO} \\
+			\color{yellow}
+			\text{Fecha}
+		\end{center}
+		\vspace{1cm}
+		%\raggedright{\textsc{Alberto Pedauyé Paredes}}
+		\color{yellow}
+		\raggedleft{\textsc{AUTOR: Alberto Pedauyé Paredes \\ DIRECTOR: }}
+	
+		\begin{huge}
+		
+		\end{huge}
+	\end{titlepage}
+
+	\nopagecolor
+	\pagestyle{empty}
+	\tableofcontents #tabla de contenidos
+	\newpage
+	\pagestyle{empty}
+	\lstlistoflistings #tabla de cuados de código
+	\newpage
+	\pagebreak
+	\listoftables #tabla de figuras
+	\newpage
+	\pagestyle{empty}
+	
+
+\chapter{INTRODUCCIÓN}
+
+\pagestyle{fancy} #estilo
+\lhead{Memoria.} #texto izquierda de la cabecera
+\chead{} #texto centro de la cabecera
+\rhead{\includegraphics[scale=0.25]{}}
+
+\cfoot{\thepage}
+\rfoot{Alberto Pedauyé Paredes}
+\renewcommand{\footrulewidth}{0.5pt}
+\setcounter{page}{11}
+\large
+			
+\section{Sección 1}
+			\subsection{Subsección 1.1}
+			...
+			
+\bibliographystyle{unsrt}
+\bibliography{biblio}
+
+\cleardoublepage
+
+
+\end{document}
+```
+
